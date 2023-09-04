@@ -1,0 +1,16 @@
+{
+ "@context": {
+    "vm":      "https://humanities.knaw.nl/def/variant-matching/",
+    "xsd":     "http://www.w3.org/2001/XMLSchema#",
+    "oa":      "http://www.w3.org/ns/oa#",
+
+    "Match":    "vm:VariantMatch",
+
+    "phrase":   {"@id": "vm:phrase",    "@type": "xsd:string" },
+    "variant":  {"@id": "vm:variant",   "@type": "xsd:string" },
+    "score":    {"@id": "vm:score",     "@type": "xsd:float" },
+    "source":   {"@id": "vm:source",    "@type": "xsd:string" },
+    "category": {"@id": "vm:category",  "@type": "xsd:string" },
+    "seqnr":    {"@id": "vm:seqnr",     "@type": "xsd:nonNegativeInteger" }
+  }
+}

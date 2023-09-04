@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "iiif_prezi": "http://iiif.io/api/presentation/3#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "tt": "https://humanities.knaw.nl/def/team-text/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Canvas": {
+      "@id": "iiif_prezi:Canvas",
+      "@context": {
+        "partOf": {
+          "@id": "dcterms:partOf",
+          "@type": "@id",
+          "@container": "@set"
+        }
+      }
+    },
+    "TextAnchorSelector": "tt:TextAnchorSelector",
+    "text": "tt:hasText"
+  }
+}

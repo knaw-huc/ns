@@ -1,0 +1,24 @@
+{
+  "@context": {
+    "oa": "http://www.w3.org/ns/oa#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "hp": "https://humanities.knaw.nl/def/provenance/",
+    "conversionDate": {
+      "@id": "hp:conversionDate",
+      "@type": "xsd:dateTime"
+    },
+    "harvestingDate": {
+      "@id": "hp:harvestingDate",
+      "@type": "xsd:dateTime"
+    },
+    "indexTimestamp": {
+      "@id": "hp:indexTimestamp",
+      "@type": "xsd:dateTime"
+    },
+    "motivation": "oa:motivatedBy",
+    "provenance": "hp:hasProvenance",
+    "source": "hp:hasSource",
+    "target": "hp:hasTarget",
+    "toolId": "hp:toolId"
+  }
+}
