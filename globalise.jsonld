@@ -31,6 +31,7 @@
       "@type": "@id"
     },
     "category": "gl:hasCategory",
+    "arguments": "gl:hasArguments",
     "text": {
       "@id": "gl:hasText",
       "@type": "xsd:string"
@@ -40,7 +41,7 @@
     {
       "comment": "has a role",
       "definedBy": "gl:",
-      "domain": "gl:Role",
+      "range": "gl:Role",
       "id": "gl:hasRole",
       "label": "role",
       "type": "rdfs:Property"
