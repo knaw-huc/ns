@@ -9,10 +9,10 @@
     "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
     "evokes": {"@id": "gl:evokes", "@description": "The token annotated does not directly refer to the instance of an event"},
     "isOfType": {"@id": "gl:isOfType", "@description": "The token annotated refers directly to the instance of an event"},
-    "role": {"@id": "gl:hasRole", "@type": "@type"},
+    "role": "gl:hasRole",
     "event": {"@id": "gl:fromEvent", "@type": "@id"},
-    "relationType": {"@id": "gl:hasRelationType", "@type": "@type"},
-    "category": {"@id": "gl:hasCategory", "@type": "@type"},
+    "relationType": "gl:hasRelationType",
+    "category": "gl:hasCategory",
     "text": {"@id": "gl:hasText", "@type": "xsd:string"}
   }
 }
