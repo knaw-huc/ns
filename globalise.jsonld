@@ -32,6 +32,7 @@
     },
     "category": "gl:hasCategory",
     "arguments": "gl:hasArguments",
+    "role": "gl:hasRole",
     "text": {
       "@id": "gl:hasText",
       "@type": "xsd:string"
