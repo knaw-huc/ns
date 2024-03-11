@@ -2,7 +2,7 @@
   "@context": {
     "gl": "https://humanities.knaw.nl/def/globalise/",
     "Event": "gl:Event",
-    "EvenArgument": "gl:EventArgument",
+    "EventArgument": "gl:EventArgument",
     "Patient": "gl:Patient",
     "Instrument": "gl:Instrument",
     "Source": "gl:Source",
@@ -11,7 +11,7 @@
     "isOfType": {"@id": "gl:isOfType", "@description": "The token annotated refers directly to the instance of an event"},
     "role": "gl:hasRole",
     "event": {"@id": "gl:fromEvent", "@type": "@id"},
-    "relationType": "gl:hasRelationType",
+    "relationType": {"@id": "gl:hasRelationType", "@type": "@id"},
     "category": "gl:hasCategory",
     "text": {"@id": "gl:hasText", "@type": "xsd:string"}
   }
