@@ -23,7 +23,6 @@
       "@id": "rdfs:seeAlso",
       "@type": "@id"
     },
-    "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
     "evokes": "gl:evokes",
     "isOfType": "gl:isOfType",
@@ -41,10 +40,18 @@
   },
   "@graph": [
     {
+      "label": "Event",
+      "id": "gl:Event",
+      "comment": "An event.",
+      "definedBy": "gl:",
+      "type": "rdfs:Class"
+    },
+    {
       "label": "category",
       "id": "gl:hasCategory",
       "type": "rdfs:Property",
       "definedBy": "gl:",
+      "domain": "gl:Event",
       "range": "gl:Category",
       "comment": "has a category"
     },
