@@ -29,7 +29,6 @@
       "@type": "@id"
     },
     "relationType": "gl:hasRelationType",
-    "category": "gl:hasCategory",
     "arguments": "gl:hasArguments",
     "role": "gl:hasRole",
     "text": {
@@ -38,6 +37,29 @@
     }
   },
   "@graph": [
+    {
+      "label": "category",
+      "id": "gl:hasCategory",
+      "type": "rdfs:Property",
+      "definedBy": "gl:",
+      "range": "gl:Category",
+      "comment": "has a category"
+    },
+    {
+      "comment": "A category in an event.",
+      "definedBy": "gl:",
+      "id": "gl:Category",
+      "label": "Category",
+      "type": "rdfs:Class"
+    },
+    {
+      "comment": "transportation",
+      "definedBy": "gl:",
+      "id": "gl:Transportation",
+      "label": "Transportation",
+      "subClassOf": "gl:Role",
+      "type": "rdfs:Class"
+    },
     {
       "comment": "has a role",
       "definedBy": "gl:",
@@ -58,7 +80,7 @@
       "definedBy": "gl:",
       "id": "gl:Source",
       "label": "Source",
-      "subClassOf": "oa:Role",
+      "subClassOf": "gl:Role",
       "type": "rdfs:Class"
     },
     {
@@ -66,7 +88,7 @@
       "definedBy": "gl:",
       "id": "gl:Patient",
       "label": "Patient",
-      "subClassOf": "oa:Role",
+      "subClassOf": "gl:Role",
       "type": "rdfs:Class"
     },
     {
@@ -74,7 +96,7 @@
       "definedBy": "gl:",
       "id": "gl:Instrument",
       "label": "Instrument",
-      "subClassOf": "oa:Role",
+      "subClassOf": "gl:Role",
       "type": "rdfs:Class"
     }
   ]
