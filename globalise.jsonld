@@ -1,6 +1,14 @@
 {
   "@context": {
     "gl": "https://humanities.knaw.nl/def/globalise/",
+    "Event": "gl:Event",
+    "EvenArgument": "gl:EventArgument",
+    "Patient": "gl:Patient",
+    "Instrument": "gl:Instrument",
+    "Source": "gl:Source",
+    "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
+    "evokes": {"@id": "gl:evokes", "@description": "The token annotated does not directly refer to the instance of an event"},
+    "isOfType": {"@id": "gl:isOfType", "@description": "The token annotated refers directly to the instance of an event"},
     "role": {"@id": "gl:hasRole", "@type": "@id"},
     "event": {"@id": "gl:fromEvent", "@type": "@id"},
     "relationType": {"@id": "gl:hasRelationType", "@type": "@id"},
