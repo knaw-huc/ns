@@ -8,3 +8,4 @@ Site for hosting custom namespaces
 - [Provenance](provenance.jsonld)
 - [Republic](republic.jsonld)
 - [Variant Matching](variant-matching.jsonld)
+- [Globalise](globalise.jsonld)
