@@ -1,48 +1,80 @@
 {
   "@context": {
     "gl": "https://humanities.knaw.nl/def/globalise/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "comment": "rdfs:comment",
+    "id": "@id",
+    "label": "rdfs:label",
+    "definedBy": {
+      "@id": "rdfs:isDefinedBy",
+      "@type": "@id"
+    },
+    "type": "@type",
     "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
     "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
-    "evokes": {"@id": "gl:evokes", "@description": "The token annotated does not directly refer to the instance of an event"},
-    "isOfType": {"@id": "gl:isOfType", "@description": "The token annotated refers directly to the instance of an event"},
-    "role": "gl:hasRole",
-    "event": {"@id": "gl:fromEvent", "@type": "@id"},
-    "relationType": {"@id": "gl:hasRelationType", "@type": "@id"},
+    "evokes": {
+      "@id": "gl:evokes",
+      "@description": "The token annotated does not directly refer to the instance of an event"
+    },
+    "isOfType": {
+      "@id": "gl:isOfType",
+      "@description": "The token annotated refers directly to the instance of an event"
+    },
+    "event": {
+      "@id": "gl:fromEvent",
+      "@type": "@id"
+    },
+    "relationType": {
+      "@id": "gl:hasRelationType",
+      "@type": "@id"
+    },
     "category": "gl:hasCategory",
-    "text": {"@id": "gl:hasText", "@type": "xsd:string"}
+    "text": {
+      "@id": "gl:hasText",
+      "@type": "xsd:string"
+    }
   },
-  "@graph":[
+  "@graph": [
     {
-    "comment": "A role in an event.",
-    "definedBy": "gl:",
-    "id": "oa:Role",
-    "label": "Role",
-    "type": "rdfs:Class"
+      "comment": "has a role",
+      "definedBy": "gl:",
+      "domain": "gl:Role",
+      "id": "gl:hasRole",
+      "label": "role",
+      "type": "rdfs:Property"
     },
     {
-"comment": "Source role",
-"definedBy": "gl:",
-"id": "gl:Source",
-"label": "Source",
-"subClassOf": "oa:Role",
-"type": "rdfs:Class"
+      "comment": "A role in an event.",
+      "definedBy": "gl:",
+      "id": "gl:Role",
+      "label": "Role",
+      "type": "rdfs:Class"
     },
     {
-"comment": "Patient role",
-"definedBy": "gl:",
-"id": "gl:Patient",
-"label": "Patient",
-"subClassOf": "oa:Role",
-"type": "rdfs:Class"
+      "comment": "Source role",
+      "definedBy": "gl:",
+      "id": "gl:Source",
+      "label": "Source",
+      "subClassOf": "oa:Role",
+      "type": "rdfs:Class"
     },
     {
-"comment": "Instrument role",
-"definedBy": "gl:",
-"id": "gl:Instrument",
-"label": "Instrument",
-"subClassOf": "oa:Role",
-"type": "rdfs:Class"
-}
+      "comment": "Patient role",
+      "definedBy": "gl:",
+      "id": "gl:Patient",
+      "label": "Patient",
+      "subClassOf": "oa:Role",
+      "type": "rdfs:Class"
+    },
+    {
+      "comment": "Instrument role",
+      "definedBy": "gl:",
+      "id": "gl:Instrument",
+      "label": "Instrument",
+      "subClassOf": "oa:Role",
+      "type": "rdfs:Class"
+    }
   ]
 }
