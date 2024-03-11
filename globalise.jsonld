@@ -25,7 +25,6 @@
     },
     "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
-//     "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
     "evokes": "gl:evokes",
     "isOfType": "gl:isOfType",
     "event": {
