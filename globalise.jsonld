@@ -19,9 +19,13 @@
       "@type": "@id"
     },
     "type": "@type",
+    "seeAlso": {
+		"@id": "rdfs:seeAlso",
+		"@type": "@id"
+    },
     "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
-    "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
+//     "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
     "evokes": "gl:evokes",
     "isOfType": "gl:isOfType",
     "event": {
@@ -58,7 +62,8 @@
       "id": "gl:Transportation",
       "label": "Transportation",
       "subClassOf": "gl:Role",
-      "type": "rdfs:Class"
+      "type": "rdfs:Class",
+      "seeAlso": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation"
     },
     {
       "comment": "has a role",
