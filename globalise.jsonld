@@ -1,1 +1,10 @@
-{}
+{
+  "@context": {
+    "gl": "https://humanities.knaw.nl/def/globalise/",
+    "role": {"@id": "gl:hasRole", "@type": "@id"},
+    "event": {"@id": "gl:fromEvent", "@type": "@id"},
+    "relationType": {"@id": "gl:hasRelationType", "@type": "@id"},
+    "category": {"@id": "gl:hasCategory", "@type": "@id"},
+    "text": {"@id": "gl:hasText", "@type": "xsd:string"}
+  }
+}
