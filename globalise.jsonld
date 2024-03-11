@@ -28,10 +28,7 @@
       "@id": "gl:fromEvent",
       "@type": "@id"
     },
-    "relationType": {
-      "@id": "gl:hasRelationType",
-      "@type": "@id"
-    },
+    "relationType": "gl:hasRelationType",
     "category": "gl:hasCategory",
     "arguments": "gl:hasArguments",
     "role": "gl:hasRole",
