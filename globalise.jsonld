@@ -22,14 +22,8 @@
     "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
     "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
-    "evokes": {
-      "@id": "gl:evokes",
-      "@description": "The token annotated does not directly refer to the instance of an event"
-    },
-    "isOfType": {
-      "@id": "gl:isOfType",
-      "@description": "The token annotated refers directly to the instance of an event"
-    },
+    "evokes": "gl:evokes",
+    "isOfType": "gl:isOfType",
     "event": {
       "@id": "gl:fromEvent",
       "@type": "@id"
