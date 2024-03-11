@@ -3,9 +3,6 @@
     "gl": "https://humanities.knaw.nl/def/globalise/",
     "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
-    "Patient": "gl:Patient",
-    "Instrument": "gl:Instrument",
-    "Source": "gl:Source",
     "Transportation": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation",
     "evokes": {"@id": "gl:evokes", "@description": "The token annotated does not directly refer to the instance of an event"},
     "isOfType": {"@id": "gl:isOfType", "@description": "The token annotated refers directly to the instance of an event"},
@@ -14,5 +11,38 @@
     "relationType": {"@id": "gl:hasRelationType", "@type": "@id"},
     "category": "gl:hasCategory",
     "text": {"@id": "gl:hasText", "@type": "xsd:string"}
-  }
+  },
+  "@graph":[
+    {
+    "comment": "A role in an event.",
+    "definedBy": "gl:",
+    "id": "oa:Role",
+    "label": "Role",
+    "type": "rdfs:Class"
+    },
+    {
+"comment": "Source role",
+"definedBy": "gl:",
+"id": "gl:Source",
+"label": "Source",
+"subClassOf": "oa:Role",
+"type": "rdfs:Class"
+    },
+    {
+"comment": "Patient role",
+"definedBy": "gl:",
+"id": "gl:Patient",
+"label": "Patient",
+"subClassOf": "oa:Role",
+"type": "rdfs:Class"
+    },
+    {
+"comment": "Instrument role",
+"definedBy": "gl:",
+"id": "gl:Instrument",
+"label": "Instrument",
+"subClassOf": "oa:Role",
+"type": "rdfs:Class"
+}
+  ]
 }
