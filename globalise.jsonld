@@ -3,112 +3,37 @@
     "gl": "https://humanities.knaw.nl/def/globalise/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "comment": "rdfs:comment",
-    "domain": {
-      "@id": "rdfs:domain",
-      "@type": "@id"
-    },
-    "range": {
-      "@id": "rdfs:range",
-      "@type": "@id"
-    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "id": "@id",
-    "label": "rdfs:label",
-    "definedBy": {
-      "@id": "rdfs:isDefinedBy",
-      "@type": "@id"
-    },
     "type": "@type",
-    "seeAlso": {
-      "@id": "rdfs:seeAlso",
-      "@type": "@id"
-    },
+    "Event": "gl:Event",
     "EventArgument": "gl:EventArgument",
+    "Transportation": "gl:Transportation",
+    "Source": "gl:Source",
+    "Patient": "gl:Patient",
+    "Instrument": "gl:Instrument",
     "evokes": "gl:evokes",
     "isOfType": "gl:isOfType",
+    "arguments": "gl:hasArguments",
+    "category": {
+      "@id": "gl:hasCategory",
+      "@type": "@vocab"
+    },
     "event": {
       "@id": "gl:fromEvent",
       "@type": "@id"
     },
-    "relationType": "gl:hasRelationType",
-    "arguments": "gl:hasArguments",
-    "role": "gl:hasRole",
+    "relationType": {
+      "@id": "gl:hasRelationType",
+      "@type": "@vocab"
+    },
+    "role": {
+      "@id": "gl:hasRole",
+      "@type": "@vocab"
+    },
     "text": {
       "@id": "gl:hasText",
       "@type": "xsd:string"
     }
-  },
-  "@graph": [
-    {
-      "label": "Event",
-      "id": "gl:Event",
-      "comment": "An event.",
-      "definedBy": "gl:",
-      "type": "rdfs:Class"
-    },
-    {
-      "label": "category",
-      "id": "gl:hasCategory",
-      "type": "rdfs:Property",
-      "definedBy": "gl:",
-      "domain": "gl:Event",
-      "range": "gl:Category",
-      "comment": "has a category"
-    },
-    {
-      "label": "Category",
-      "id": "gl:Category",
-      "comment": "A category in an event.",
-      "definedBy": "gl:",
-      "type": "rdfs:Class"
-    },
-    {
-      "label": "Transportation",
-      "id": "gl:Transportation",
-      "comment": "transportation",
-      "definedBy": "gl:",
-      "subClassOf": "gl:Category",
-      "type": "rdfs:Class",
-      "seeAlso": "https://github.com/globalise-huygens/nlp-event-detection/wiki#Transportation"
-    },
-    {
-      "label": "role",
-      "id": "gl:hasRole",
-      "comment": "has a role",
-      "definedBy": "gl:",
-      "range": "gl:Role",
-      "type": "rdfs:Property"
-    },
-    {
-      "label": "Role",
-      "id": "gl:Role",
-      "comment": "A role in an event.",
-      "definedBy": "gl:",
-      "type": "rdfs:Class"
-    },
-    {
-      "label": "Source",
-      "id": "gl:Source",
-      "comment": "Source role",
-      "definedBy": "gl:",
-      "subClassOf": "gl:Role",
-      "type": "rdfs:Class"
-    },
-    {
-      "label": "Patient",
-      "id": "gl:Patient",
-      "comment": "Patient role",
-      "definedBy": "gl:",
-      "subClassOf": "gl:Role",
-      "type": "rdfs:Class"
-    },
-    {
-      "label": "Instrument",
-      "id": "gl:Instrument",
-      "comment": "Instrument role",
-      "definedBy": "gl:",
-      "subClassOf": "gl:Role",
-      "type": "rdfs:Class"
-    }
-  ]
+  }
 }
