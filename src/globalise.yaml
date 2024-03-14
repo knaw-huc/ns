@@ -3,9 +3,6 @@
   gl: https://humanities.knaw.nl/def/globalise/
   ged: https://github.com/globalise-huygens/nlp-event-detection/wiki#
   xsd: http://www.w3.org/2001/XMLSchema#
-  rdfs: http://www.w3.org/2000/01/rdf-schema#
-
-  comment: rdfs:comment
 
   Event: gl:Event
 
@@ -123,10 +120,6 @@
     '@type': xsd:string
 
   # event ignition (relation types), from https://github.com/globalise-huygens/annotation/blob/main/2023/inception/tagsets/ignition.json
-  evokes:
-    '@id': gl:evokes
-    comment: The token annotated does not directly refer to the instance of an event
-  isOfType:
-    '@id': gl:isOfType
-    comment: The token annotated refers directly to the instance of an event
+  evokes: gl:evokes
+  isOfType: gl:isOfType
 
