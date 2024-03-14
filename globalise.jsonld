@@ -5,8 +5,6 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "id": "@id",
-    "type": "@type",
     "Event": "gl:Event",
     "AlteringARelationship": "ged:AlteringARelationship",
     "Arriving": "ged:Arriving",
@@ -87,12 +85,12 @@
     "Voyage": "ged:Voyage",
     "arguments": "gl:hasArguments",
     "category": {
-      "id": "gl:hasCategory",
-      "type": "@vocab"
+      "@id": "gl:hasCategory",
+      "@type": "@vocab"
     },
     "relationType": {
-      "id": "gl:hasRelationType",
-      "type": "@vocab"
+      "@id": "gl:hasRelationType",
+      "@type": "@vocab"
     },
     "EventArgument": "gl:EventArgument",
     "Agent": "gl:Agent",
@@ -106,16 +104,16 @@
     "Source": "gl:Source",
     "Target": "gl:Target",
     "event": {
-      "id": "gl:fromEvent",
-      "type": "@id"
+      "@id": "gl:fromEvent",
+      "@type": "@id"
     },
     "role": {
-      "id": "gl:hasRole",
-      "type": "@vocab"
+      "@id": "gl:hasRole",
+      "@type": "@vocab"
     },
     "text": {
-      "id": "gl:hasText",
-      "type": "xsd:string"
+      "@id": "gl:hasText",
+      "@type": "xsd:string"
     },
     "evokes": "gl:evokes",
     "isOfType": "gl:isOfType"

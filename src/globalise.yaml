@@ -6,9 +6,6 @@
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   xsd: http://www.w3.org/2001/XMLSchema#
 
-  id: '@id'
-  type: '@type'
-
   Event: gl:Event
 
   # event types, from https://github.com/globalise-huygens/annotation/blob/main/2023/inception/tagsets/events.json
@@ -93,11 +90,11 @@
   # event properties
   arguments: gl:hasArguments
   category:
-    id: gl:hasCategory
-    type: '@vocab'
+    '@id': gl:hasCategory
+    '@type': '@vocab'
   relationType:
-    id: gl:hasRelationType
-    type: '@vocab'
+    '@id': gl:hasRelationType
+    '@type': '@vocab'
 
   EventArgument: gl:EventArgument
 
@@ -115,14 +112,14 @@
 
   # event argument properties
   event:
-    id: gl:fromEvent
-    type: '@id'
+    '@id': gl:fromEvent
+    '@type': '@id'
   role:
-    id: gl:hasRole
-    type: '@vocab'
+    '@id': gl:hasRole
+    '@type': '@vocab'
   text:
-    id: gl:hasText
-    type: xsd:string
+    '@id': gl:hasText
+    '@type': xsd:string
 
   # event ignition (relation types), from https://github.com/globalise-huygens/annotation/blob/main/2023/inception/tagsets/ignition.json
   evokes: gl:evokes
