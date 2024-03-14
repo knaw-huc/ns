@@ -1,0 +1,303 @@
+'@context':
+  dc: http://purl.org/dc/elements/1.1/
+  dcterms: http://purl.org/dc/terms/
+  iiif_prezi: http://iiif.io/api/presentation/3#
+  oa: http://www.w3.org/ns/oa#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  republic: https://humanities.knaw.nl/def/republic/
+  xsd: http://www.w3.org/2001/XMLSchema#
+
+  AttendanceList: republic:AttendanceList
+  Attendant: republic:Attendant
+  Canvas:
+    '@id': iiif_prezi:Canvas
+    '@context':
+      partOf:
+        '@id': dcterms:partOf
+        '@type': '@id'
+        '@container': '@set'
+  Column: republic:Column
+  Date: republic:Date
+  HeightMetadata: republic:HeightMetadata
+  Index: republic:Index
+  Line: republic:Line
+  Location: republic:Location
+  Page: republic:Page
+  PageXmlDoc: republic:PageXmlDoc
+  PhraseMatch: republic:PhraseMatch
+  PropositionOrigin: republic:PropositionOrigin
+  RepublicParagraph: republic:RepublicParagraph
+  Resolution: republic:Resolution
+  ResolutionParagraph: republic:ResolutionParagraph
+  Reviewed: republic:Reviewed
+  Scan: republic:Scan
+  Session: republic:Session
+  TextRegion: republic:TextRegion
+  Volume: republic:Volume
+
+  addressedTo: republic:addressedTo
+  affairsRelation: republic:affairsRelation
+  attendanceSpans: republic:hasAttendanceSpans
+  correspondenceFrom: republic:correspondenceFrom
+  evidence: republic:hasEvidence
+  formula: republic:formula
+  height: republic:height
+  label: rdfs:label
+  lang: dc:language
+  lineRanges: republic:lineRanges
+  location: republic:hasLocation
+  locationRelation: republic:locationRelation
+  matchScores: republic:hasMatchScores
+  metadata: republic:hasMetadata
+  ofProvince: republic:ofProvince
+  organisation: republic:organisation
+  personLocation: republic:personLocation
+  personNamePrefix: republic:personNamePrefix
+  personRole: republic:personRole
+  proposer: republic:proposer
+  propositionOpening: republic:propositionOpening
+  propositionVerb: republic:propositionVerb
+  readingOrder: republic:readingOrder
+  regionLinks: republic:regionLinks
+  representationRelation: republic:representationRelation
+  representatives: republic:representatives
+  residenceRelation: republic:residenceRelation
+  residentIn: republic:residentIn
+  resolutionIds: republic:resolutionIds
+  resolutionRelation: republic:resolutionRelation
+  structure: republic:hasStructure
+  temporalReference: republic:temporalReference
+  text: republic:hasText
+  textPageNum: republic:textPageNum
+  variableEntity: republic:variableEntity
+  baseline:
+    '@id': republic:baseline
+    '@type': xsd:list
+  beginAnchor:
+    '@id': republic:beginAnchor
+    '@type': xsd:integer
+  beginCharOffset:
+    '@id': republic:beginCharOffset
+    '@type': xsd:integer
+  charMatch:
+    '@id': republic:charMatch
+    '@type': xsd:float
+  class:
+    '@id': republic:class
+    '@type': xsd:string
+  columnId:
+    '@id': republic:inColumn
+    '@type': '@id'
+  coords:
+    '@id': republic:coords
+    '@type': xsd:list
+  dateShiftStatus:
+    '@id': republic:dateShiftStatus
+    '@type': xsd:string
+  delegateId:
+    '@id': republic:delegateId
+    '@type': xsd:integer
+  delegateName:
+    '@id': republic:delegateName
+    '@type': xsd:string
+  delegateScore:
+    '@id': republic:delegateScore
+    '@type': xsd:integer
+  docId:
+    '@id': republic:inDocument
+    '@type': '@id'
+  end:
+    '@id': republic:end
+    '@type': xsd:integer
+  endAnchor:
+    '@id': republic:endAnchor
+    '@type': xsd:integer
+  endCharOffset:
+    '@id': republic:endCharOffset
+    '@type': xsd:integer
+  index:
+    '@id': republic:index
+    '@type': xsd:integer
+  hasSessionDateElement:
+    '@id': republic:hasSessionDateElement
+    '@type': xsd:boolean
+  ignorecase:
+    '@id': republic:ignorecase
+    '@type': xsd:boolean
+  iiifUrl:
+    '@id': republic:iiifUrl
+    '@type': '@id'
+  indexTimestamp:
+    '@id': republic:indexTimestamp
+    '@type': xsd:dateTime
+  inventoryNum:
+    '@id': republic:inventoryNum
+    '@type': xsd:integer
+  max:
+    '@id': republic:max
+    '@type': xsd:integer
+  mean:
+    '@id': republic:mean
+    '@type': xsd:integer
+  median:
+    '@id': republic:median
+    '@type': xsd:integer
+  min:
+    '@id': republic:min
+    '@type': xsd:integer
+  isWorkday:
+    '@id': republic:isWorkday
+    '@type': xsd:boolean
+  leftAlignment:
+    '@id': republic:leftAlignment
+    '@type': xsd:string
+  headerId:
+    '@id': republic:headerId
+    '@type': xsd:string
+  levenshteinSimilarity:
+    '@id': republic:levenshteinSimilarity
+    '@type': xsd:float
+  lineId:
+    '@id': republic:inLine
+    '@type': '@id'
+  lineWidth:
+    '@id': republic:lineWidth
+    '@type': xsd:string
+  linesIncludeRestDay:
+    '@id': republic:linesIncludeRestDay
+    '@type': xsd:boolean
+  medianNormalLeft:
+    '@id': republic:medianNormalLeft
+    '@type': xsd:integer
+  medianNormalLength:
+    '@id': republic:medianNormalLength
+    '@type': xsd:integer
+  medianNormalRight:
+    '@id': republic:medianNormalRight
+    '@type': xsd:integer
+  medianNormalWidth:
+    '@id': republic:medianNormalWidth
+    '@type': xsd:integer
+  ngramMatch:
+    '@id': republic:ngramMatch
+    '@type': xsd:float
+  numLines:
+    '@id': republic:numLines
+    '@type': xsd:integer
+  offset:
+    '@id': republic:offset
+    '@type': xsd:integer
+  opening:
+    '@id': republic:opening
+    '@type': xsd:string
+  pageId:
+    '@id': republic:onPage
+    '@type': '@id'
+  pageIds:
+    '@id': republic:pageIds
+    '@type': xsd:string
+  codeCommit:
+    '@id': republic:codeCommit
+    '@type': '@id'
+  manifest:
+    '@id': republic:manifest
+    '@type': '@id'
+  provUrl:
+    '@id': republic:provUrl
+    '@type': '@id'
+  pageNum:
+    '@id': republic:pageNum
+    '@type': xsd:integer
+  paragraphIndex:
+    '@id': republic:paragraphIndex
+    '@type': xsd:integer
+  parentId:
+    '@id': republic:hasParent
+    '@type': '@id'
+  parentType:
+    '@id': republic:parentType
+    '@type': xsd:string
+  fullString:
+    '@id': republic:fullString
+    '@type': xsd:string
+  title:
+    '@id': republic:title
+    '@type': xsd:string
+  endOffset:
+    '@id': republic:endOffset
+    '@type': xsd:int
+  pattern:
+    '@id': republic:pattern
+    '@type': xsd:string
+  phrase:
+    '@id': republic:phrase
+    '@type': xsd:string
+  proposerRole:
+    '@id': republic:proposerRole
+    '@type': xsd:string
+  propositionOrganisation:
+    '@id': republic:propositionOrganisation
+    '@type': xsd:string
+  propositionOrigin:
+    '@id': republic:propositionOrigin
+    '@type': xsd:string
+  propositionType:
+    '@id': republic:propositionType
+    '@type': xsd:string
+  resolutionType:
+    '@id': republic:resolutionType
+    '@type': xsd:string
+  resourceId:
+    '@id': republic:inResource
+    '@type': '@id'
+  rightAlignment:
+    '@id': republic:rightAlignment
+    '@type': xsd:string
+  scanId:
+    '@id': republic:onScan
+    '@type': '@id'
+  sessionDate:
+    '@id': republic:sessionDate
+    '@type': xsd:string
+  sessionDay:
+    '@id': republic:sessionDay
+    '@type': xsd:integer
+  sessionId:
+    '@id': republic:inSession
+    '@type': '@id'
+  sessionMonth:
+    '@id': republic:sessionMonth
+    '@type': xsd:integer
+  sessionNum:
+    '@id': republic:sessionNum
+    '@type': xsd:integer
+  sessionWeekday:
+    '@id': republic:sessionWeekday
+    '@type': xsd:string
+  sessionYear:
+    '@id': republic:sessionYear
+    '@type': xsd:integer
+  sourceId:
+    '@id': republic:inSource
+    '@type': '@id'
+  start:
+    '@id': republic:start
+    '@type': xsd:integer
+  startOffset:
+    '@id': republic:startOffset
+    '@type': xsd:integer
+  string:
+    '@id': republic:string
+    '@type': xsd:string
+  textId:
+    '@id': republic:hasText
+    '@type': '@id'
+  textRegionId:
+    '@id': republic:inTextRegion
+    '@type': '@id'
+  variant:
+    '@id': republic:variant
+    '@type': xsd:string
+  volume:
+    '@id': republic:inVolume
+    '@type': xsd:string
