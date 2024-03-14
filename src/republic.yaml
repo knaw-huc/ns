@@ -122,7 +122,7 @@
     '@id': republic:hasSessionDateElement
     '@type': xsd:boolean
   ignorecase:
-    '@id': republic:ignorecase
+    '@id': republic:ignoreCase
     '@type': xsd:boolean
   iiifUrl:
     '@id': republic:iiifUrl
