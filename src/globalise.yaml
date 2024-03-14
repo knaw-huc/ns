@@ -120,11 +120,11 @@
   role:
     id: gl:hasRole
     type: '@vocab'
+  text:
+    id: gl:hasText
+    type: xsd:string
 
   # event ignition (relation types), from https://github.com/globalise-huygens/annotation/blob/main/2023/inception/tagsets/ignition.json
   evokes: gl:evokes
   isOfType: gl:isOfType
 
-  text:
-    id: gl:hasText
-    type: xsd:string
