@@ -52,17 +52,35 @@
     "affairsRelation": "republic:affairsRelation",
     "attendanceSpans": "republic:hasAttendanceSpans",
     "correspondenceFrom": "republic:correspondenceFrom",
+    "date": "republic:date",
+    "dateMatchString": "republic:dateMatchString",
+    "datePhraseString": "republic:datePhraseString",
+    "domain": "republic:domain",
     "evidence": "republic:hasEvidence",
     "formula": "republic:formula",
     "height": "republic:height",
+    "inventoryID": "republic:inventoryID",
+    "inventoryPeriodEnd": "republic:inventoryPeriodEnd",
+    "inventoryPeriodStart": "republic:inventoryPeriodStart",
     "label": "rdfs:label",
+    "labelSource": "republic:labelSource",
+    "labelString": "republic:labelString",
+    "labelType": "republic:labelType",
+    "labels": "republic:labels",
     "lang": "dc:language",
+    "length": "republic:length",
+    "lineClass": "republic:lineClass",
+    "lineClassifier": "republic:lineClassifier",
     "lineRanges": "republic:lineRanges",
+    "lines": "republic:lines",
+    "linkType": "republic:linkType",
     "location": "republic:hasLocation",
     "locationRelation": "republic:locationRelation",
     "matchScores": "republic:hasMatchScores",
     "ofProvince": "republic:ofProvince",
     "organisation": "republic:organisation",
+    "pages": "republic:pages",
+    "paraType": "republic:paraType",
     "personLocation": "republic:personLocation",
     "personNamePrefix": "republic:personNamePrefix",
     "personRole": "republic:personRole",
@@ -70,18 +88,31 @@
     "propositionOpening": "republic:propositionOpening",
     "propositionVerb": "republic:propositionVerb",
     "readingOrder": "republic:readingOrder",
+    "region": "republic:region",
     "regionLinks": "republic:regionLinks",
     "representationRelation": "republic:representationRelation",
     "representatives": "republic:representatives",
     "residenceRelation": "republic:residenceRelation",
     "residentIn": "republic:residentIn",
-    "resolutionIds": "republic:resolutionIds",
+    "resolutionIDs": "republic:resolutionIDs",
     "resolutionRelation": "republic:resolutionRelation",
+    "scanIDs": "republic:scanIDs",
+    "scans": "republic:scans",
+    "seriesName": "republic:seriesName",
+    "stats": "republic:stats",
     "structure": "republic:hasStructure",
+    "superscript": "republic:superscript",
     "temporalReference": "republic:temporalReference",
     "text": "republic:hasText",
     "textPageNum": "republic:textPageNum",
+    "textRegionClass": "republic:textRegionClass",
+    "textRegionClassifier": "republic:textRegionClassifier",
+    "textRegionLinks": "republic:textRegionLinks",
+    "textRegions": "republic:textRegions",
+    "textStyle": "republic:textStyle",
+    "textType": "republic:textType",
     "variableEntity": "republic:variableEntity",
+    "words": "republic:words",
     "baseline": {
       "@id": "republic:baseline",
       "@type": "xsd:list"
@@ -102,7 +133,7 @@
       "@id": "republic:class",
       "@type": "xsd:string"
     },
-    "columnId": {
+    "columnID": {
       "@id": "republic:inColumn",
       "@type": "@id"
     },
@@ -114,8 +145,8 @@
       "@id": "republic:dateShiftStatus",
       "@type": "xsd:string"
     },
-    "delegateId": {
-      "@id": "republic:delegateId",
+    "delegateID": {
+      "@id": "republic:delegateID",
       "@type": "xsd:integer"
     },
     "delegateName": {
@@ -126,7 +157,7 @@
       "@id": "republic:delegateScore",
       "@type": "xsd:integer"
     },
-    "docId": {
+    "docID": {
       "@id": "republic:inDocument",
       "@type": "@id"
     },
@@ -190,15 +221,15 @@
       "@id": "republic:leftAlignment",
       "@type": "xsd:string"
     },
-    "headerId": {
-      "@id": "republic:headerId",
+    "headerID": {
+      "@id": "republic:headerID",
       "@type": "xsd:string"
     },
     "levenshteinSimilarity": {
       "@id": "republic:levenshteinSimilarity",
       "@type": "xsd:float"
     },
-    "lineId": {
+    "lineID": {
       "@id": "republic:inLine",
       "@type": "@id"
     },
@@ -242,12 +273,12 @@
       "@id": "republic:opening",
       "@type": "xsd:string"
     },
-    "pageId": {
+    "pageID": {
       "@id": "republic:onPage",
       "@type": "@id"
     },
-    "pageIds": {
-      "@id": "republic:pageIds",
+    "pageIDs": {
+      "@id": "republic:pageIDs",
       "@type": "@id"
     },
     "codeCommit": {
@@ -270,7 +301,7 @@
       "@id": "republic:paragraphIndex",
       "@type": "xsd:integer"
     },
-    "parentId": {
+    "parentID": {
       "@id": "republic:hasParent",
       "@type": "@id"
     },
@@ -318,7 +349,7 @@
       "@id": "republic:resolutionType",
       "@type": "xsd:string"
     },
-    "resourceId": {
+    "resourceID": {
       "@id": "republic:inResource",
       "@type": "@id"
     },
@@ -326,7 +357,7 @@
       "@id": "republic:rightAlignment",
       "@type": "xsd:string"
     },
-    "scanId": {
+    "scanID": {
       "@id": "republic:onScan",
       "@type": "@id"
     },
@@ -338,7 +369,7 @@
       "@id": "republic:sessionDay",
       "@type": "xsd:integer"
     },
-    "sessionId": {
+    "sessionID": {
       "@id": "republic:inSession",
       "@type": "@id"
     },
@@ -358,7 +389,7 @@
       "@id": "republic:sessionYear",
       "@type": "xsd:integer"
     },
-    "sourceId": {
+    "sourceID": {
       "@id": "republic:inSource",
       "@type": "@id"
     },
@@ -374,11 +405,11 @@
       "@id": "republic:string",
       "@type": "xsd:string"
     },
-    "textId": {
+    "textID": {
       "@id": "republic:hasText",
       "@type": "@id"
     },
-    "textRegionId": {
+    "textRegionID": {
       "@id": "republic:inTextRegion",
       "@type": "@id"
     },
