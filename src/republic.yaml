@@ -58,7 +58,6 @@
   evidence: republic:hasEvidence
   formula: republic:formula
   height: republic:height
-  inventoryID: republic:inventoryID
   inventoryPeriodEnd: republic:inventoryPeriodEnd
   inventoryPeriodStart: republic:inventoryPeriodStart
   label: rdfs:label
@@ -95,7 +94,6 @@
   residentIn: republic:residentIn
   resolutionIDs: republic:resolutionIDs
   resolutionRelation: republic:resolutionRelation
-  scanIDs: republic:scanIDs
   scans: republic:scans
   seriesName: republic:seriesName
   stats: republic:stats
@@ -172,6 +170,9 @@
   indexTimestamp:
     '@id': republic:indexTimestamp
     '@type': xsd:dateTime
+  inventoryID:
+    '@id': republic:inInventory
+    '@type': '@id'
   inventoryNum:
     '@id': republic:inventoryNum
     '@type': xsd:integer
@@ -297,6 +298,9 @@
     '@type': xsd:string
   scanID:
     '@id': republic:onScan
+    '@type': '@id'
+  scanIDs:
+    '@id': republic:scanIDs
     '@type': '@id'
   sessionDate:
     '@id': republic:sessionDate
