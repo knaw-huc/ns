@@ -62,7 +62,6 @@
     "inventoryPeriodEnd": "republic:inventoryPeriodEnd",
     "inventoryPeriodStart": "republic:inventoryPeriodStart",
     "label": "rdfs:label",
-    "labelSource": "republic:labelSource",
     "labelString": "republic:labelString",
     "labelType": "republic:labelType",
     "labels": "republic:labels",
@@ -199,6 +198,10 @@
       "@id": "republic:inventoryNum",
       "@type": "xsd:integer"
     },
+    "labelSource": {
+      "@id": "republic:labelSource",
+      "@type": "@id"
+    },
     "max": {
       "@id": "republic:max",
       "@type": "xsd:integer"
@@ -280,7 +283,7 @@
       "@type": "@id"
     },
     "pageIDs": {
-      "@id": "republic:pageIDs",
+      "@id": "republic:onPages",
       "@type": "@id"
     },
     "codeCommit": {
@@ -364,7 +367,7 @@
       "@type": "@id"
     },
     "scanIDs": {
-      "@id": "republic:scanIDs",
+      "@id": "republic:onScans",
       "@type": "@id"
     },
     "sessionDate": {

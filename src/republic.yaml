@@ -61,7 +61,6 @@
   inventoryPeriodEnd: republic:inventoryPeriodEnd
   inventoryPeriodStart: republic:inventoryPeriodStart
   label: rdfs:label
-  labelSource: republic:labelSource
   labelString: republic:labelString
   labelType: republic:labelType
   labels: republic:labels
@@ -176,6 +175,9 @@
   inventoryNum:
     '@id': republic:inventoryNum
     '@type': xsd:integer
+  labelSource:
+    '@id': republic:labelSource
+    '@type': '@id'
   max:
     '@id': republic:max
     '@type': xsd:integer
@@ -237,7 +239,7 @@
     '@id': republic:onPage
     '@type': '@id'
   pageIDs:
-    '@id': republic:pageIDs
+    '@id': republic:onPages
     '@type': '@id'
   codeCommit:
     '@id': republic:codeCommit
@@ -300,7 +302,7 @@
     '@id': republic:onScan
     '@type': '@id'
   scanIDs:
-    '@id': republic:scanIDs
+    '@id': republic:onScans
     '@type': '@id'
   sessionDate:
     '@id': republic:sessionDate
