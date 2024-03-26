@@ -7,6 +7,7 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "republic": "https://humanities.knaw.nl/def/republic/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "tt": "https://humanities.knaw.nl/def/team-text/",
     "AttendanceList": "republic:AttendanceList",
     "Attendant": "republic:Attendant",
     "Canvas": {
@@ -24,19 +25,27 @@
     "HeightMetadata": "republic:HeightMetadata",
     "Index": "republic:Index",
     "Line": "republic:Line",
+    "LineMetadata": "republic:LineMetadata",
     "Location": "republic:Location",
+    "LogicalText": "tt:LogicalText",
     "Page": "republic:Page",
     "PageXmlDoc": "republic:PageXmlDoc",
+    "Paragraph": "republic:Paragraph",
+    "ParagraphMetadata": "republic:ParagraphMetadata",
     "PhraseMatch": "republic:PhraseMatch",
     "PropositionOrigin": "republic:PropositionOrigin",
     "RepublicParagraph": "republic:RepublicParagraph",
     "Resolution": "republic:Resolution",
+    "ResolutionMetadata": "republic:ResolutionMetadata",
     "ResolutionParagraph": "republic:ResolutionParagraph",
     "Reviewed": "republic:Reviewed",
     "Scan": "republic:Scan",
     "Session": "republic:Session",
+    "SessionMetadata": "republic:SessionMetadata",
     "TextRegion": "republic:TextRegion",
+    "TextRegionMetadata": "republic:TextRegionMetadata",
     "Volume": "republic:Volume",
+    "VolumeMetadata": "republic:VolumeMetadata",
     "addressedTo": "republic:addressedTo",
     "affairsRelation": "republic:affairsRelation",
     "attendanceSpans": "republic:hasAttendanceSpans",
@@ -141,7 +150,7 @@
       "@type": "xsd:boolean"
     },
     "ignorecase": {
-      "@id": "republic:ignorecase",
+      "@id": "republic:ignoreCase",
       "@type": "xsd:boolean"
     },
     "iiifUrl": {
@@ -238,7 +247,7 @@
     },
     "pageIds": {
       "@id": "republic:pageIds",
-      "@type": "xsd:string"
+      "@type": "@id"
     },
     "codeCommit": {
       "@id": "republic:codeCommit",
