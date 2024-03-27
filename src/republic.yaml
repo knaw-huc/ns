@@ -84,7 +84,7 @@
   proposer: republic:proposer
   propositionOpening: republic:propositionOpening
   propositionVerb: republic:propositionVerb
-  readingOrder: republic:readingOrder
+  readingOrderIndex: republic:readingOrderIndex
   region: republic:region
   regionLinks: republic:regionLinks
   representationRelation: republic:representationRelation
@@ -96,6 +96,7 @@
   scans: republic:scans
   seriesName: republic:seriesName
   stats: republic:stats
+  strikethrough: republic:strikethrough
   structure: republic:hasStructure
   superscript: republic:superscript
   temporalReference: republic:temporalReference
@@ -107,6 +108,7 @@
   textRegions: republic:textRegions
   textStyle: republic:textStyle
   textType: republic:textType
+  underlined: republic:underlined
   variableEntity: republic:variableEntity
   words: republic:words
   baseline:
