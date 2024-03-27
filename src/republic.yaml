@@ -307,6 +307,9 @@
   sessionDate:
     '@id': republic:sessionDate
     '@type': xsd:string
+  sessionDateString:
+    '@id': republic:sessionDateString
+    '@type': xsd:string
   sessionDay:
     '@id': republic:sessionDay
     '@type': xsd:integer
