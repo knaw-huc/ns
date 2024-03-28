@@ -8,12 +8,9 @@
   xsd: http://www.w3.org/2001/XMLSchema#
   tt: https://humanities.knaw.nl/def/team-text/
 
-  TextAnchorSelector: tt:TextAnchorSelector
-  LogicalText: tt:LogicalText
-  metadata: tt:hasMetadata
+  label: rdfs:label
+  lang: dc:language
 
-  AttendanceList: republic:AttendanceList
-  Attendant: republic:Attendant
   Canvas:
     '@id': iiif_prezi:Canvas
     '@context':
@@ -21,6 +18,13 @@
         '@id': dcterms:partOf
         '@type': '@id'
         '@container': '@set'
+
+  TextAnchorSelector: tt:TextAnchorSelector
+  LogicalText: tt:LogicalText
+  metadata: tt:hasMetadata
+
+  AttendanceList: republic:AttendanceList
+  Attendant: republic:Attendant
   Column: republic:Column
   Date: republic:Date
   HeightMetadata: republic:HeightMetadata
@@ -56,15 +60,15 @@
   datePhraseString: republic:datePhraseString
   domain: republic:domain
   evidence: republic:hasEvidence
+  fontSize: republic:fontSize
   formula: republic:formula
   height: republic:height
   inventoryPeriodEnd: republic:inventoryPeriodEnd
   inventoryPeriodStart: republic:inventoryPeriodStart
-  label: rdfs:label
+  kerning: republic:kerning
   labelString: republic:labelString
   labelType: republic:labelType
   labels: republic:labels
-  lang: dc:language
   length: republic:length
   lineClass: republic:lineClass
   lineClassifier: republic:lineClassifier
@@ -98,6 +102,7 @@
   stats: republic:stats
   strikethrough: republic:strikethrough
   structure: republic:hasStructure
+  subscript: republic:subscript
   superscript: republic:superscript
   temporalReference: republic:temporalReference
   text: republic:hasText
