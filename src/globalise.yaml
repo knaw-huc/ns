@@ -1,89 +1,91 @@
 '@context':
   # namespaces
   gl: https://humanities.knaw.nl/def/globalise/
-  ged: https://github.com/globalise-huygens/nlp-event-detection/wiki#
+  glob: https://github.com/globalise-huygens/nlp-event-detection/wiki#
   xsd: http://www.w3.org/2001/XMLSchema#
+  prov: http://www.w3.org/ns/prov#
+  sem: http://semanticweb.cs.vu.nl/2009/11/sem/
 
   Event: gl:Event
 
   # event types, from https://github.com/globalise-huygens/annotation/blob/main/2023/inception/tagsets/events.json
-  AlteringARelationship: ged:AlteringARelationship
-  Arriving: ged:Arriving
-  Attacking: ged:Attacking
-  BeginningARelationship: ged:BeginningARelationship
-  BeginningContractualAgreement: ged:BeginningContractualAgreement
-  BeingAtAPlace: ged:BeingAtAPlace
-  BeingAtPeace: ged:BeingAtPeace
-  BeingDamaged: ged:BeingDamaged
-  BeingDead: ged:BeingDead
-  BeingDestroyed: ged:BeingDestroyed
-  BeingEmployed: ged:BeingEmployed
-  BeingInARelationship: ged:BeingInARelationship
-  BeingInConflict: ged:BeingInConflict
-  BeingInDebt: ged:BeingInDebt
-  BeingLeader: ged:BeingLeader
-  Besieging: ged:Besieging
-  Buying: ged:Buying
-  ChangeOfPossession: ged:ChangeOfPossession
-  Collaboration: ged:Collaboration
-  Damaging: ged:Damaging
-  Decreasing: ged:Decreasing
-  Destroying: ged:Destroying
-  Dying: ged:Dying
-  Election: ged:Election
-  Encounter: ged:Encounter
-  EndingARelationship: ged:EndingARelationship
-  EndingAWar: ged:EndingAWar
-  EndingConflict: ged:EndingConflict
-  EndingContractualAgreement: ged:EndingContractualAgreement
-  Enslaving: ged:Enslaving
-  ExtendingContractualAgreement: ged:ExtendingContractualAgreement
-  FallingIll: ged:FallingIll
-  FinancialTransaction: ged:FinancialTransaction
-  ForceToAct: ged:ForceToAct
-  Getting: ged:Getting
-  Giving: ged:Giving
-  HavingAMedicalCondition: ged:HavingAMedicalCondition
-  HavingContractualAgreement: ged:HavingContractualAgreement
-  HavingInPossession: ged:HavingInPossession
-  HavingInternalState+: ged:HavingInternalState+
-  HavingInternalState-: ged:HavingInternalState-
-  Healing: ged:Healing
-  Increasing: ged:Increasing
-  IntentionalDamaging: ged:IntentionalDamaging
-  InternalChange: ged:InternalChange
-  Invasion: ged:Invasion
-  JoiningAnOrganization: ged:JoiningAnOrganization
-  Killing: ged:Killing
-  Leaving: ged:Leaving
-  LeavingAnOrganization: ged:LeavingAnOrganization
-  LosingPossession: ged:LosingPossession
-  Mismanagement: ged:Mismanagement
-  Mutiny: ged:Mutiny
-  Occupation: ged:Occupation
-  PoliticalRevolution: ged:PoliticalRevolution
-  QuantityChange: ged:QuantityChange
-  RelationshipChange: ged:RelationshipChange
-  Repairing: ged:Repairing
-  Replacing: ged:Replacing
-  Request: ged:Request
-  Riot: ged:Riot
-  ScalarChange: ged:ScalarChange
-  Selling: ged:Selling
-  Sinking: ged:Sinking
-  SocialInteraction: ged:SocialInteraction
-  SocialStatusChange: ged:SocialStatusChange
-  StartingAWar: ged:StartingAWar
-  StartingConflict: ged:StartingConflict
-  TakingUnderControl: ged:TakingUnderControl
-  Trade: ged:Trade
-  Translocation: ged:Translocation
-  Transportation: ged:Transportation
-  Unrest: ged:Unrest
-  Uprising: ged:Uprising
-  ViolentContest: ged:ViolentContest
-  Visit: ged:Visit
-  Voyage: ged:Voyage
+  AlteringARelationship: glob:AlteringARelationship
+  Arriving: glob:Arriving
+  Attacking: glob:Attacking
+  BeginningARelationship: glob:BeginningARelationship
+  BeginningContractualAgreement: glob:BeginningContractualAgreement
+  BeingAtAPlace: glob:BeingAtAPlace
+  BeingAtPeace: glob:BeingAtPeace
+  BeingDamaged: glob:BeingDamaged
+  BeingDead: glob:BeingDead
+  BeingDestroyed: glob:BeingDestroyed
+  BeingEmployed: glob:BeingEmployed
+  BeingInARelationship: glob:BeingInARelationship
+  BeingInConflict: glob:BeingInConflict
+  BeingInDebt: glob:BeingInDebt
+  BeingLeader: glob:BeingLeader
+  Besieging: glob:Besieging
+  Buying: glob:Buying
+  ChangeOfPossession: glob:ChangeOfPossession
+  Collaboration: glob:Collaboration
+  Damaging: glob:Damaging
+  Decreasing: glob:Decreasing
+  Destroying: glob:Destroying
+  Dying: glob:Dying
+  Election: glob:Election
+  Encounter: glob:Encounter
+  EndingARelationship: glob:EndingARelationship
+  EndingAWar: glob:EndingAWar
+  EndingConflict: glob:EndingConflict
+  EndingContractualAgreement: glob:EndingContractualAgreement
+  Enslaving: glob:Enslaving
+  ExtendingContractualAgreement: glob:ExtendingContractualAgreement
+  FallingIll: glob:FallingIll
+  FinancialTransaction: glob:FinancialTransaction
+  ForceToAct: glob:ForceToAct
+  Getting: glob:Getting
+  Giving: glob:Giving
+  HavingAMedicalCondition: glob:HavingAMedicalCondition
+  HavingContractualAgreement: glob:HavingContractualAgreement
+  HavingInPossession: glob:HavingInPossession
+  HavingInternalStatePlus: glob:HavingInternalStatePlus
+  HavingInternalStateMin: glob:HavingInternalStateMin
+  Healing: glob:Healing
+  Increasing: glob:Increasing
+  IntentionalDamaging: glob:IntentionalDamaging
+  InternalChange: glob:InternalChange
+  Invasion: glob:Invasion
+  JoiningAnOrganization: glob:JoiningAnOrganization
+  Killing: glob:Killing
+  Leaving: glob:Leaving
+  LeavingAnOrganization: glob:LeavingAnOrganization
+  LosingPossession: glob:LosingPossession
+  Mismanagement: glob:Mismanagement
+  Mutiny: glob:Mutiny
+  Occupation: glob:Occupation
+  PoliticalRevolution: glob:PoliticalRevolution
+  QuantityChange: glob:QuantityChange
+  RelationshipChange: glob:RelationshipChange
+  Repairing: glob:Repairing
+  Replacing: glob:Replacing
+  Request: glob:Request
+  Riot: glob:Riot
+  ScalarChange: glob:ScalarChange
+  Selling: glob:Selling
+  Sinking: glob:Sinking
+  SocialInteraction: glob:SocialInteraction
+  SocialStatusChange: glob:SocialStatusChange
+  StartingAWar: glob:StartingAWar
+  StartingConflict: glob:StartingConflict
+  TakingUnderControl: glob:TakingUnderControl
+  Trade: glob:Trade
+  Translocation: glob:Translocation
+  Transportation: glob:Transportation
+  Unrest: glob:Unrest
+  Uprising: glob:Uprising
+  ViolentContest: glob:ViolentContest
+  Visit: glob:Visit
+  Voyage: glob:Voyage
 
   # event properties
   arguments: gl:hasArguments
@@ -120,6 +122,14 @@
     '@type': xsd:string
 
   # event ignition (relation types), from https://github.com/globalise-huygens/annotation/blob/main/2023/inception/tagsets/ignition.json
-  evokes: gl:evokes
-  isOfType: gl:isOfType
+  evokes: glob:evokes
+  isOfType: glob:isOfType
 
+  # event inference
+  actor: sem:hasActor
+  roleType:
+    '@id': sem:roleType
+    '@type': '@id'
+  derivedFrom:
+    '@id': prov:wasDerivedFrom
+    '@type': '@id'
