@@ -10,7 +10,7 @@
     "pagexml": "http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/",
     "tei": "http://www.tei-c.org/ns/1.0#",
     "folia": "https://w3id.org/folia/v2/",
-    "iiif_prezi": "http://iiif.io/api/presentation/3#",
+    "iiif": "http://iiif.io/api/presentation/3#",
     "Token" : {
         "@id": "txt:Token",
         "@type": "@id",
@@ -210,7 +210,7 @@
         "owl:sameAs": ["tei:corr", "folia:Correction"]
     },
     "Canvas": {
-      "@id": "iiif_prezi:Canvas",
+      "@id": "iiif:Canvas",
       "@context": {
         "partOf": {
           "@id": "dcterms:partOf",
@@ -225,6 +225,10 @@
         "rdfs:label": "number",
         "rdfs:comment": "Sequence number",
         "owl:sameAs": ["tei:n", "folia:NAttribute"]
+    },
+    "title": {
+        "@id": "dcterms:title",
+        "@container": "@language"
     }
   }
 }

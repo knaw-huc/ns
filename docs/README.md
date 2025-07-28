@@ -58,11 +58,12 @@ service infrastructure.
 Formats like TEI, FoLiA and PageXML themselves define a vocabulary pertaining to textual structure and annotations.
 
 As our data comes from a variety of sources, we use a common basic vocabulary
-that is distinct but largely derived from the above.
+that is distinct but largely derived from the above. The vocabulary is formalised in [text.jsonld](../text.jsonld) and
+can be included in the JSON-LD context as <https://humanities.knaw.nl/ns/text.jsond>.
 
 ### Anatomy of a Web Annotation
 
-The following example shows a skeleton for a minimal web annotation:
+The following example shows an example web annotation:
 
 ```json
 {
@@ -71,26 +72,104 @@ The following example shows a skeleton for a minimal web annotation:
     "https://humanities.knaw.nl/ns/text.jsond",
   ],
   "type": "Annotation",
-  "id": "https://preview.dev.diginfra.org/annorepo/w3c/someproject/9a9422f7-f796-4c4a-afe8-f94579f36c81",
+  "id": "https://preview.dev.diginfra.org/annorepo/w3c/israels/9a9422f7-f796-4c4a-afe8-f94579f36c81",
   "purpose": "tagging",
   "generated": "2025-07-14T10:55:11.190970",
   "body": {
     "id": "urn:someproject:letter:001",
     "type": "Letter",
+    "TODO:manifest": "https://preview.dev.diginfra.org/files/israels/static/manifests/letters/ii001.json",
+    "TODO:correspondent": "Jo van Gogh-Bonger",
+    "TODO:file": "ii001",
+    "TODO:institution": "VGM",
+    "TODO:location": "Amsterdam, The Netherlands",
+    "TODO:msId": "b8564V2008",
+    "TODO:period": "1891-02-02",
+    "TODO:periodLong": "",
+    "TODO:sender": "Isaac Israëls",
+    "TODO:nextLetter": "urn:israels:letter:ii002",
+    "title": {
+      "nl": "Isaac Israëls aan Jo van Gogh-Bonger. Amsterdam, 2 februari 1891.",
+      "en": "Isaac Israëls to Jo van Gogh-Bonger. Amsterdam, 2 February 1891."
+    }        
   },
   "target": {
     {
-      "source": "https://preview.dev.diginfra.org/textsurf/someproject/001.txt?char=0,1234",
+      "source": "https://preview.dev.diginfra.org/textsurf/israels/001.txt?char=0,1234",
       "type": "Text",
     },
     {
-      "source": "https://preview.dev.diginfra.org/textsurf/someproject/001.txt",
+      "source": "https://preview.dev.diginfra.org/textsurf/israels/001.txt",
       "type": "Text",
       "selector": {
         "type": "TextPositionSelector",
         "start": 0,
         "end": 1234
       }
+    },
+    {
+      "source": "https://preview.dev.diginfra.org/sources/israels/ii001.xml",
+      "type": "Text",
+      "selector": {
+        "type": "XPathSelector",
+        "value": "//tei:body",
+      }
+   },
+    {
+      "source": "https://preview.dev.diginfra.org/files/israels/static/manifests/letters/ii001.json/canvas/israels/pages/b8564V2008_b",
+      "type": "Canvas"
+    },
+    {
+      "source": "https://preview.dev.diginfra.org/files/israels/static/manifests/letters/ii001.json/canvas/israels/pages/b8564V2008_b",
+      "type": "Canvas",
+      "selector": [
+        {
+          "@context": "http://iiif.io/api/annex/openannotation/context.json",
+          "type": "iiif:ImageApiSelector",
+          "region": "0,0,4136,6200"
+        }
+      ]
+    },
+    {
+      "source": "https://tt-iiif.dev.diginfra.org/iiif/3/israels|pages|b8564V2008_b.jpg/0,0,4136,6200/max/0/default.jpg",
+      "type": "Image"
+    },
+    {
+      "source": "https://tt-iiif.dev.diginfra.org/iiif/3/israels|pages|b8564V2008_b.jpg/full/max/0/default.jpg",
+      "type": "Image",
+      "selector": [
+        {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=0,0,4136,6200"
+        }
+      ]
+    },
+    {
+      "source": "https://preview.dev.diginfra.org/files/israels/static/manifests/letters/ii001.json/canvas/israels/pages/b8564V2008_vs_b",
+      "type": "Canvas",
+      "selector": [
+        {
+          "@context": "http://iiif.io/api/annex/openannotation/context.json",
+          "type": "iiif:ImageApiSelector",
+          "region": "0,0,8272,6200"
+        }
+      ]
+    },
+    {
+      "source": "https://tt-iiif.dev.diginfra.org/iiif/3/israels|pages|b8564V2008_vs_b.jpg/0,0,8272,6200/max/0/default.jpg",
+      "type": "Image"
+    },
+    {
+      "source": "https://tt-iiif.dev.diginfra.org/iiif/3/israels|pages|b8564V2008_vs_b.jpg/full/max/0/default.jpg",
+      "type": "Image",
+      "selector": [
+        {
+          "type": "FragmentSelector",
+          "conformsTo": "http://www.w3.org/TR/media-frags/",
+          "value": "xywh=0,0,8272,6200"
+        }
+      ]
     }
   }
 }
