@@ -1,6 +1,6 @@
 {
   "@context": {
-    "txt": "https://humanities.knaw.nl/def/text/",
+    "txt": "https://humanities.knaw.nl/ns/text/",
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcterms": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
@@ -11,203 +11,98 @@
     "tei": "http://www.tei-c.org/ns/1.0#",
     "folia": "https://w3id.org/folia/v2/",
     "iiif": "http://iiif.io/api/presentation/3#",
+    "CommonTextVocabulary" : {
+        "@id": "txt:CommonTextVocabulary"
+    },
+    "TextStructure" : {
+        "@id": "txt:TextStructure"
+    },
     "Token" : {
-        "@id": "txt:Token",
-        "@type": "@id",
-        "rdfs:label": "Token",
-        "rdfs:comment": "A small unit of text when text is separated on whitespace, punctuation and numerals. Not necessarily carrying much meaning by itself. Not by definition equal to a word."
+        "@id": "txt:Token"
     },
     "Word" : {
-        "@id": "txt:Word",
-        "@type": "@id",
-        "rdfs:label": "Word",
-        "rdfs:comment": "A fundamental grammatical meaning-carrying item in text structure.",
-        "owl:sameAs": [ "folia:Word", "tei:w" ]
+        "@id": "txt:Word"
     },
     "Line" : {
-        "@id": "txt:Line",
-        "@type": "@id",
-        "rdfs:label": "Line",
-        "rdfs:comment": "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines).",
-        "owl:sameAs": [ "pagexml:TextLine", "tei:Line" ]
+        "@id": "txt:Line"
     },
     "Sentence" : {
-        "@id": "txt:Sentence",
-        "@type": "@id",
-        "rdfs:label": "Sentence",
-        "rdfs:comment": "A grammatically complete syntactic unit, consisting of words.",
-        "owl:sameAs": [ "folia:Sentence", "tei:s" ]
+        "@id": "txt:Sentence"
     },
     "Paragraph" : {
-        "@id": "txt:Paragraph",
-        "@type": "@id",
-        "rdfs:label": "Paragraph",
-        "rdfs:comment": "A self-contained unit of discourse. Leading/trailing whitespace or newlines are not included.",
-        "owl:sameAs": [ "tei:p", "folia:Paragraph" ]
+        "@id": "txt:Paragraph"
     },
     "Span" : {
-        "@id": "txt:Span",
-        "@type": "@id",
-        "rdfs:label": "Span",
-        "rdfs:comment": "An arbitrary generic grouping of a relatively small amount of text.",
-        "owl:sameAs": [ "tei:span", "folia:String" ]
+        "@id": "txt:Span"
     },
     "Quote" : {
-        "@id": "txt:quote",
-        "@type": "@id",
-        "rdfs:label": "Quote",
-        "rdfs:comment": "Text representing a quote or citation",
-        "owl:sameAs": [ "tei:q", "folia:Quote" ]
+        "@id": "txt:Quote"
     },
     "Division" : {
-        "@id": "txt:Division",
-        "@type": "@id",
-        "rdfs:label": "Division",
-        "rdfs:comment": "An arbitrary generic grouping of a larger amount of text in discourse.",
-        "owl:sameAs": [ "pagexml:TextRegion", "tei:div", "folia:Division" ]
+        "@id": "txt:Division"
     },
     "Section" : {
-        "@id": "txt:Section",
-        "@type": "@id",
-        "rdfs:label": "Section",
-        "rdfs:comment": "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering."
+        "@id": "txt:Section"
     },
     "Page": {
-        "@id": "txt:Page",
-        "@type": "@id",
-        "rdfs:label": "Page",
-        "rdfs:comment": "A large span of text on the same unit of a certain physical medium.",
-        "owl:sameAs": "pagexml:Page"
+        "@id": "txt:Page"
     },
     "Letter": {
-        "@id": "txt:Letter",
-        "@type": "@id",
-        "rdfs:label": "Letter",
-        "rdfs:comment": "A body of text that represents written correspondence/communication between people."
+        "@id": "txt:Letter"
     },
     "Linebreak" : {
-        "@id": "txt:Linebreak",
-        "@type": "@id",
-        "rdfs:label": "Linebreak",
-        "rdfs:comment": "Point at which one line ends and a new line is formed. This annotation is only used in contexts where line breaks are not already implied and should be used sparingly.  The so-called carriage-return is already implied and not encoded separately.",
-        "owl:sameAs": [ "tei:lb", "folia:Linebreak" ]
+        "@id": "txt:Linebreak"
     },
     "Head": {
-        "@id": "txt:Head",
-        "@type": "@id",
-        "rdfs:label": "Head",
-        "rdfs:comment": "Titles of sections and subsections",
-        "owl:sameAs": ["tei:head", "folia:head" ]
+        "@id": "txt:Head"
     },
     "List": {
-        "@id": "txt:List",
-        "@type": "@id",
-        "rdfs:label": "List",
-        "rdfs:comment": "A text portion that contains an enumerisation of itemisation of different items, often separated demarked by a bullet, hyphen or numeral.",
-        "owl:sameAs": [ "tei:list", "folia:List" ]
+        "@id": "txt:List"
     },
     "ListItemMarker": {
-        "@id": "txt:ListItemMarker",
-        "@type": "@id",
-        "rdfs:label": "ListItemMarker",
-        "rdfs:comment": "The numeral/bullet/hyphen that marks items in a list."
+        "@id": "txt:ListItemMarker"
     },
     "ListItem": {
-        "@id": "txt:ListItem",
-        "@type": "@id",
-        "rdfs:label": "ListItem",
-        "rdfs:comment": "An item in a list. Does not include the numeral/bullet/hyphen.",
-        "owl:sameAs": ["tei:item", "folia:ListItem" ]
+        "@id": "txt:ListItem"
     },
     "Whitespace" : {
-        "@id": "txt:Whitespace",
-        "@type": "@id",
-        "rdfs:label": "Whitespace",
-        "rdfs:comment": "Empty parts of the text, i.e. gaps in text, may be either horizontal or vertical.",
-        "owl:sameAs": ["tei:space", "folia:Whitespace" ]
+        "@id": "txt:Whitespace"
     },
     "Figure" : {
-        "@id": "txt:Figure",
-        "@type": "@id",
-        "rdfs:label": "Figure",
-        "rdfs:comment": "A part of the document that contains one or more images, may be accompanied by a caption.",
-        "owl:sameAs": ["tei:figure", "folia:Figure" ]
+        "@id": "txt:Figure"
     },
     "Image" : {
-        "@id": "txt:Image",
-        "@type": "@id",
-        "rdfs:label": "Image",
-        "rdfs:comment": "Part of the document where an image is located. Non-textual.",
-        "owl:sameAs": "tei:graphic"
+        "@id": "txt:Image"
     },
     "Caption" : {
-        "@id": "txt:Caption",
-        "@type": "@id",
-        "rdfs:label": "Caption",
-        "rdfs:comment": "Text that constitutes the caption for a figure or table",
-        "owl:sameAs": ["tei:caption", "folia:Caption"]
+        "@id": "txt:Caption"
     },
     "Table" : {
-        "@id": "txt:Table",
-        "@type": "@id",
-        "rdfs:label": "Table",
-        "rdfs:comment": "Text that constitutes a table",
-        "owl:sameAs": ["tei:table", "folia:Table"]
+        "@id": "txt:Table"
     },
     "Row" : {
-        "@id": "txt:Row",
-        "@type": "@id",
-        "rdfs:label": "Row",
-        "rdfs:comment": "Text that constitutes a row in a table",
-        "owl:sameAs": ["tei:row", "folia:Row"]
+        "@id": "txt:Row"
     },
     "Cell" : {
-        "@id": "txt:Cell",
-        "@type": "@id",
-        "rdfs:label": "Cell",
-        "rdfs:comment": "Text that constitutes a single cell in a table",
-        "owl:sameAs": ["tei:cell", "folia:Cell"]
+        "@id": "txt:Cell"
     },
     "Column" : {
-        "@id": "txt:Column",
-        "@type": "@id",
-        "rdfs:label": "Column",
-        "rdfs:comment": "Text that corresponds to a column in a multi-columned layout. Not used in tables."
+        "@id": "txt:Column"
     },
     "Note" : {
-        "@id": "txt:Note",
-        "@type": "@id",
-        "rdfs:label": "Note",
-        "rdfs:comment": "A footnote, endnote or note in the marginalia. This contains the actual note.",
-        "owl:sameAs": ["tei:note", "folia:Note"]
+        "@id": "txt:Note"
     },
     "Reference" : {
-        "@id": "txt:Reference",
-        "@type": "@id",
-        "rdfs:label": "Reference",
-        "rdfs:comment": "A reference to another location in the text, such as to a footnote/endnote",
-        "owl:sameAs": ["tei:ref", "folia:Reference"]
+        "@id": "txt:Reference"
     },
     "Entity" : {
-        "@id": "txt:Entity",
-        "@type": "@id",
-        "rdfs:label": "Entity",
-        "rdfs:comment": "A span of text that refers to some kind of named entity",
-        "owl:sameAs": ["tei:rs", "tei:name", "folia:Entity"]
+        "@id": "txt:Entity"
     },
     "Highlight" : {
-        "@id": "txt:Highlight",
-        "@type": "@id",
-        "rdfs:label": "Highlight",
-        "rdfs:comment": "A highlighted/emphasised piece of text, in some presentational form.",
-        "owl:sameAs": ["tei:hi", "folia:TextMarkupStyle"]
+        "@id": "txt:Highlight"
     },
     "Correction" : {
-        "@id": "txt:Correction",
-        "@type": "@id",
-        "rdfs:label": "Correction",
-        "rdfs:comment": "A correction on a text",
-        "owl:sameAs": ["tei:corr", "folia:Correction"]
+        "@id": "txt:Correction"
     },
     "Canvas": {
       "@id": "iiif:Canvas",
@@ -221,14 +116,29 @@
     },
     "n": {
         "@id": "txt:n",
-        "@type": "@id",
-        "rdfs:label": "number",
-        "rdfs:comment": "Sequence number",
-        "owl:sameAs": ["tei:n", "folia:NAttribute"]
+        "@type": "@id"
     },
     "title": {
         "@id": "dcterms:title",
         "@container": "@language"
+    },
+    "label": {
+        "@id": "rdfs:label"
+    },
+    "comment": {
+        "@id": "rdfs:comment"
+    },
+    "description": {
+        "@id": "dcterms:description",
+        "@container": "@language"
+    },
+    "title": {
+        "@id": "dcterms:title",
+        "@container": "@language"
+    },
+    "sameAs": {
+        "@id": "owl:sameAs",
+        "@type": "@id"
     }
   }
 }
