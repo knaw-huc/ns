@@ -1,8 +1,8 @@
-# Annotation vocabulary documentation
+# Text & Annotation vocabulary
 
 ## Introduction
 
-This page documents in what form annotations are made available by Team Text,
+This page documents in what form annotations and texts are made available by Team Text,
 Digital Infrastructure, KNAW Humanities Cluster.
 
 The aims are:
@@ -56,10 +56,12 @@ service infrastructure.
 ## Vocabulary
 
 Formats like TEI, FoLiA and PageXML themselves define a vocabulary pertaining to textual structure and annotations.
-
 As our data comes from a variety of sources, we use a common basic vocabulary
-that is distinct but largely derived from the above. The vocabulary is formalised in [text.jsonld](../text.jsonld) and
-can be included in the JSON-LD context as <https://humanities.knaw.nl/ns/text.jsond>.
+that is distinct but largely derived from the above. The vocabulary is formalised and documented in:
+
+* Ontology with documentation: [text.json](../text.json) 
+* JSON-LD context: [text.jsonld](../text.jsonld) 
+    * This will be served at  <https://humanities.knaw.nl/ns/text.jsonld>.
 
 ### Anatomy of a Web Annotation
 
@@ -69,7 +71,7 @@ The following example shows an example web annotation:
 {
   "@context": [
     "http://www.w3.org/ns/anno.jsonld",
-    "https://humanities.knaw.nl/ns/text.jsond",
+    "https://humanities.knaw.nl/ns/text.jsonld",
   ],
   "type": "Annotation",
   "id": "https://preview.dev.diginfra.org/annorepo/w3c/israels/9a9422f7-f796-4c4a-afe8-f94579f36c81",
@@ -174,3 +176,12 @@ The following example shows an example web annotation:
   }
 }
 ```
+
+**Note**: Parts with prefix *TODO:* are still be reconciled with into the new vocabulary.
+
+## Specification
+
+
+
+AnnoRepo does not build upon an actual triple store and does not actually understand JSON-LD, rather it treats
+it as pure JSON. 

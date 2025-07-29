@@ -1,0 +1,13 @@
+{
+    "@context": {
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "hasTopConcept": { "@id": "skos:hasTopConcept", "@type": "@id" },
+        "topConceptOf": { "@id": "skos:topConceptOf", "@type": "@id" },
+        "inScheme": { "@id": "skos:inScheme", "@type": "@id" },
+        "broader": { "@id": "skos:broader", "@type": "@id" },
+        "definition": { "@id": "skos:definition"},
+        "prefLabel": { "@id": "skos:prefLabel"},
+        "Concept": { "@id": "skos:Concept" },
+        "Concept": { "@id": "skos:ConceptScheme" }
+    }
+}
