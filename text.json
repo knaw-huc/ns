@@ -4,251 +4,283 @@
         "skos.jsonld"
   ],
   "CommonTextVocabulary": {
+        "@id": "txt:CommonTextVocabulary",
         "@type": "skos:ConceptScheme",
         "title": {
             "en": "Common Text Vocabulary"
         },
-        "hasTopConcept": "TextStructure"
+        "hasTopConcept": "txt:TextStructure"
   },
   "TextStructure": {
+      "@id": "txt:TextStructure",
       "@type": "skos:Concept",
       "prefLabel": "TextStructure",
       "definition": "A category that groups concepts that mark structure in text",
-      "inScheme": "CommonTextVocabulary",
-      "topConceptOf": "CommonTextVocabulary"
+      "inScheme": "txt:CommonTextVocabulary",
+      "topConceptOf": "txt:CommonTextVocabulary"
   },
   "Token" : {
+      "@id": "txt:Token",
       "@type": "skos:Concept",
       "prefLabel": "Token",
       "definition": "A small unit of text when text is separated on whitespace, punctuation and numerals. Not necessarily carrying much meaning by itself. Not by definition equal to a word.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure"
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Word" : {
+      "@id": "txt:Word",
       "@type": "skos:Concept",
       "prefLabel": "Word",
       "definition": "A fundamental grammatical meaning-carrying item in text structure.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "folia:Word", "tei:w" ]
   },
   "Line" : {
+      "@id": "txt:Line",
       "@type": "skos:Concept",
       "prefLabel": "Line",
       "definition": "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines).",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "pagexml:TextLine", "tei:Line" ]
   },
   "Sentence" : {
+      "@id": "txt:Sentence",
       "@type": "skos:Concept",
       "prefLabel": "Sentence",
       "definition": "A grammatically complete syntactic unit, consisting of words.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "folia:Sentence", "tei:s" ]
   },
   "Paragraph" : {
+      "@id": "txt:Paragraph",
       "@type": "skos:Concept",
       "prefLabel": "Paragraph",
       "definition": "A self-contained unit of discourse. Leading/trailing whitespace or newlines are not included.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "tei:p", "folia:Paragraph" ]
   },
   "Span" : {
+      "@id": "txt:Span",
       "@type": "skos:Concept",
       "prefLabel": "Span",
       "definition": "An arbitrary generic grouping of a relatively small amount of text.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "tei:span", "folia:String" ]
   },
   "Quote" : {
+      "@id": "txt:Quote",
       "@type": "skos:Concept",
       "prefLabel": "Quote",
       "definition": "Text representing a quote or citation",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "tei:q", "folia:Quote" ]
   },
   "Division" : {
+      "@id": "txt:Division",
       "@type": "skos:Concept",
       "prefLabel": "Division",
       "definition": "An arbitrary generic grouping of a larger amount of text in discourse.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "pagexml:TextRegion", "tei:div", "folia:Division" ]
   },
   "Section" : {
+      "@id": "txt:Section",
       "@type": "skos:Concept",
       "prefLabel": "Section",
       "definition": "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure"
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Page": {
+      "@id": "txt:Page",
       "@type": "skos:Concept",
       "prefLabel": "Page",
       "definition": "A large span of text on the same unit of a certain physical medium.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": "pagexml:Page"
   },
   "Letter": {
+      "@id": "txt:Letter",
       "@type": "skos:Concept",
       "prefLabel": "Letter",
       "definition": "A body of text that represents written correspondence/communication between people.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure"
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Linebreak" : {
+      "@id": "txt:Linebreak",
       "@type": "skos:Concept",
       "prefLabel": "Linebreak",
       "definition": "Point at which one line ends and a new line is formed. This annotation is only used in contexts where line breaks are not already implied and should be used sparingly.  The so-called carriage-return is already implied and not encoded separately.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "tei:lb", "folia:Linebreak" ]
   },
   "Head": {
+      "@id": "txt:Head",
       "@type": "skos:Concept",
       "prefLabel": "Head",
       "definition": "Titles of sections and subsections",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:head", "folia:head" ]
   },
   "List": {
+      "@id": "txt:List",
       "@type": "skos:Concept",
       "prefLabel": "List",
       "definition": "A text portion that contains an enumerisation of itemisation of different items, often separated demarked by a bullet, hyphen or numeral.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": [ "tei:list", "folia:List" ]
   },
   "ListItemMarker": {
+      "@id": "txt:ListItemMarker",
       "@type": "skos:Concept",
       "prefLabel": "ListItemMarker",
       "definition": "The numeral/bullet/hyphen that marks items in a list.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure"
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "ListItem": {
+      "@id": "txt:ListItem",
       "@type": "skos:Concept",
       "prefLabel": "ListItem",
       "definition": "An item in a list. Does not include the numeral/bullet/hyphen.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:item", "folia:ListItem" ]
   },
   "Whitespace" : {
+      "@id": "txt:Whitespace",
       "@type": "skos:Concept",
       "prefLabel": "Whitespace",
       "definition": "Empty parts of the text, i.e. gaps in text, may be either horizontal or vertical.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:space", "folia:Whitespace" ]
   },
   "Figure" : {
+      "@id": "txt:Figure",
       "@type": "skos:Concept",
       "prefLabel": "Figure",
       "definition": "A part of the document that contains one or more images, may be accompanied by a caption.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:figure", "folia:Figure" ]
   },
   "Image" : {
+      "@id": "txt:Image",
       "@type": "skos:Concept",
       "prefLabel": "Image",
       "definition": "Part of the document where an image is located. Non-textual.",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": "tei:graphic"
   },
   "Caption" : {
+      "@id": "txt:Caption",
       "@type": "skos:Concept",
       "prefLabel": "Caption",
       "definition": "Text that constitutes the caption for a figure or table",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:caption", "folia:Caption"]
   },
   "Table" : {
+      "@id": "txt:Table",
       "@type": "skos:Concept",
       "prefLabel": "Table",
       "definition": "Text that constitutes a table",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:table", "folia:Table"]
   },
   "Row" : {
+      "@id": "txt:Row",
       "@type": "skos:Concept",
       "prefLabel": "Row",
       "definition": "Text that constitutes a row in a table",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:row", "folia:Row"]
   },
   "Cell" : {
+      "@id": "txt:Cell",
       "@type": "skos:Concept",
       "prefLabel": "Cell",
       "definition": "Text that constitutes a single cell in a table",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:cell", "folia:Cell"]
   },
   "Column" : {
+      "@id": "txt:Column",
       "@type": "skos:Concept",
       "prefLabel": "Column",
-      "broader": "TextStructure",
+      "broader": "txt:TextStructure",
       "definition": "Text that corresponds to a column in a multi-columned layout. Not used in tables.",
-      "inScheme": "CommonTextVocabulary"
+      "inScheme": "txt:CommonTextVocabulary"
   },
   "Note" : {
+      "@id": "txt:Note",
       "@type": "skos:Concept",
       "prefLabel": "Note",
       "definition": "A footnote, endnote or note in the marginalia. This contains the actual note.",
-      "broader": "TextStructure",
-      "inScheme": "CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:note", "folia:Note"]
   },
   "Reference" : {
+      "@id": "txt:Reference",
       "@type": "skos:Concept",
       "prefLabel": "Reference",
       "definition": "A reference to another location in the text, such as to a footnote/endnote",
-      "broader": "TextStructure",
-      "inScheme": "CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:ref", "folia:Reference"]
   },
   "Entity" : {
+      "@id": "txt:Entity",
       "@type": "skos:Concept",
       "prefLabel": "Entity",
       "definition": "A span of text that refers to some kind of named entity",
-      "broader": "TextStructure",
-      "inScheme": "CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:rs", "tei:name", "folia:Entity"]
   },
   "Highlight" : {
+      "@id": "txt:Highlight",
       "@type": "skos:Concept",
       "prefLabel": "Highlight",
       "definition": "A highlighted/emphasised piece of text, in some presentational form.",
-      "broader": "TextStructure",
-      "inScheme": "CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:hi", "folia:TextMarkupStyle"]
   },
   "Correction" : {
+      "@id": "txt:Correction",
       "@type": "skos:Concept",
       "prefLabel": "Correction",
       "definition": "A correction on a text",
-      "inScheme": "CommonTextVocabulary",
-      "broader": "TextStructure",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
       "sameAs": ["tei:corr", "folia:Correction"]
   },
   "n": {
+      "@id": "txt:n",
       "@type": "rdf:Property",
       "prefLabel": "number",
       "definition": "Sequence number",
-      "inScheme": "CommonTextVocabulary",
+      "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:n", "folia:NAttribute"]
   }
 }
