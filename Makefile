@@ -4,11 +4,28 @@ SHELL := bash
 .DELETE_ON_ERROR:
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
+DISTRO := $(shell . /etc/os-release; echo $$ID)
 
-all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld
+all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld text.nq
 
 %.jsonld: src/%.yaml
 	yq --output-format json $< > $@
 
 %-expanded.json: %.json
 	jsonld expand -l -a all $< > $@
+
+%.nq: %.json
+	jsonld format -f n-quads -l -a all $< > $@
+
+deps:
+	@echo "Installing dependencies, you probably want to run this with sudo to install globally, but note that jsonld-cli will be installed globally from NPM rather than from a package!"
+ifeq ($(DISTRO),arch)
+	pacman -S yq npm
+else ifeq ($(DISTRO),$(filter $(DISTRO), debian ubuntu))
+	apt-get install yq npm
+else ifeq ($(DISTRO),$(filter $(DISTRO), fedora redhat))
+	yum install yq npm
+else ifeq ($(DISTRO),$(filter $(DISTRO), alpine postmarketos))
+	apk add yq npm
+endif
+	npm install -g jsonld-cli
