@@ -5,6 +5,8 @@
         "topConceptOf": { "@id": "skos:topConceptOf", "@type": "@id" },
         "inScheme": { "@id": "skos:inScheme", "@type": "@id" },
         "broader": { "@id": "skos:broader", "@type": "@id" },
+        "narrower": { "@id": "skos:narrower", "@type": "@id" },
+        "related": { "@id": "skos:related", "@type": "@id" },
         "definition": { "@id": "skos:definition"},
         "prefLabel": { "@id": "skos:prefLabel"},
         "Concept": { "@id": "skos:Concept" },

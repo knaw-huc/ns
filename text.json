@@ -25,6 +25,7 @@
       "prefLabel": "Token",
       "definition": "A small unit of text when text is separated on whitespace, punctuation and numerals. Not necessarily carrying much meaning by itself. Not by definition equal to a word.",
       "inScheme": "txt:CommonTextVocabulary",
+      "related": "txt:Word",
       "broader": "txt:TextStructure"
   },
   "Word" : {
@@ -34,6 +35,7 @@
       "definition": "A fundamental grammatical meaning-carrying item in text structure.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
+      "related": "txt:Token",
       "sameAs": [ "folia:Word", "tei:w" ]
   },
   "Line" : {
@@ -96,6 +98,7 @@
       "prefLabel": "Section",
       "definition": "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering.",
       "inScheme": "txt:CommonTextVocabulary",
+      "related": "txt:Division",
       "broader": "txt:TextStructure"
   },
   "Page": {
