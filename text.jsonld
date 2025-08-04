@@ -1,6 +1,6 @@
 {
   "@context": {
-    "txt": "https://humanities.knaw.nl/ns/text/",
+    "txt": "https://ns.huc.knaw.nl/text/",
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcterms": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
