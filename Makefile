@@ -4,7 +4,13 @@ SHELL := bash
 .DELETE_ON_ERROR:
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
-DISTRO := $(shell . /etc/os-release; echo $$ID)
+OS := $(shell uname)
+
+ifeq ($(OS),Darwin)
+	DISTRO = mac
+else
+	DISTRO = $(shell . /etc/os-release; echo $$ID)
+endif
 
 all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld text.nq docs/text.md
 
@@ -31,5 +37,7 @@ else ifeq ($(DISTRO),$(filter $(DISTRO), fedora redhat))
 	yum install yq npm
 else ifeq ($(DISTRO),$(filter $(DISTRO), alpine postmarketos))
 	apk add yq npm
+else ifeq ($(DISTRO),mac))
+	brew install yq npm
 endif
 	npm install -g jsonld-cli
