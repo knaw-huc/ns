@@ -1,0 +1,3 @@
+[submodule "helpers/skosConverter"]
+	path = helpers/skosConverter
+	url = https://github.com/proycon/skosConverter.git

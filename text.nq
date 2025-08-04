@@ -1,0 +1,242 @@
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#caption> .
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Caption> .
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes the caption for a figure or table" .
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Caption> <http://www.w3.org/2004/02/skos/core#prefLabel> "Caption" .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#cell> .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Cell> .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes a single cell in a table" .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Cell> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cell" .
+<https://humanities.knaw.nl/ns/text/Column> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Column> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Column> <http://www.w3.org/2004/02/skos/core#definition> "Text that corresponds to a column in a multi-columned layout. Not used in tables." .
+<https://humanities.knaw.nl/ns/text/Column> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Column> <http://www.w3.org/2004/02/skos/core#prefLabel> "Column" .
+<https://humanities.knaw.nl/ns/text/CommonTextVocabulary> <http://purl.org/dc/terms/title> "Common Text Vocabulary"@en .
+<https://humanities.knaw.nl/ns/text/CommonTextVocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://humanities.knaw.nl/ns/text/CommonTextVocabulary> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#corr> .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Correction> .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/2004/02/skos/core#definition> "A correction on a text" .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Correction> <http://www.w3.org/2004/02/skos/core#prefLabel> "Correction" .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2002/07/owl#sameAs> <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/TextRegion> .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#div> .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Division> .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2004/02/skos/core#definition> "An arbitrary generic grouping of a larger amount of text in discourse." .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Division> <http://www.w3.org/2004/02/skos/core#prefLabel> "Division" .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#name> .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#rs> .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Entity> .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2004/02/skos/core#definition> "A span of text that refers to some kind of named entity" .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Entity> <http://www.w3.org/2004/02/skos/core#prefLabel> "Entity" .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#figure> .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Figure> .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/2004/02/skos/core#definition> "A part of the document that contains one or more images, may be accompanied by a caption." .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Figure> <http://www.w3.org/2004/02/skos/core#prefLabel> "Figure" .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#head> .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/head> .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/2004/02/skos/core#definition> "Titles of sections and subsections" .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Head> <http://www.w3.org/2004/02/skos/core#prefLabel> "Head" .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#hi> .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/TextMarkupStyle> .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/2004/02/skos/core#definition> "A highlighted/emphasised piece of text, in some presentational form." .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Highlight> <http://www.w3.org/2004/02/skos/core#prefLabel> "Highlight" .
+<https://humanities.knaw.nl/ns/text/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Image> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#graphic> .
+<https://humanities.knaw.nl/ns/text/Image> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Image> <http://www.w3.org/2004/02/skos/core#definition> "Part of the document where an image is located. Non-textual." .
+<https://humanities.knaw.nl/ns/text/Image> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Image> <http://www.w3.org/2004/02/skos/core#prefLabel> "Image" .
+<https://humanities.knaw.nl/ns/text/Letter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Letter> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Letter> <http://www.w3.org/2004/02/skos/core#definition> "A body of text that represents written correspondence/communication between people." .
+<https://humanities.knaw.nl/ns/text/Letter> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Letter> <http://www.w3.org/2004/02/skos/core#prefLabel> "Letter" .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/2002/07/owl#sameAs> <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/TextLine> .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#Line> .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/2004/02/skos/core#definition> "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines)." .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Line> <http://www.w3.org/2004/02/skos/core#prefLabel> "Line" .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#lb> .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Linebreak> .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/2004/02/skos/core#definition> "Point at which one line ends and a new line is formed. This annotation is only used in contexts where line breaks are not already implied and should be used sparingly.  The so-called carriage-return is already implied and not encoded separately." .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Linebreak> <http://www.w3.org/2004/02/skos/core#prefLabel> "Linebreak" .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#list> .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/List> .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/2004/02/skos/core#definition> "A text portion that contains an enumerisation of itemisation of different items, often separated demarked by a bullet, hyphen or numeral." .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/List> <http://www.w3.org/2004/02/skos/core#prefLabel> "List" .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#item> .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/ListItem> .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/2004/02/skos/core#definition> "An item in a list. Does not include the numeral/bullet/hyphen." .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/ListItem> <http://www.w3.org/2004/02/skos/core#prefLabel> "ListItem" .
+<https://humanities.knaw.nl/ns/text/ListItemMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#definition> "The numeral/bullet/hyphen that marks items in a list." .
+<https://humanities.knaw.nl/ns/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#prefLabel> "ListItemMarker" .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#note> .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Note> .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/2004/02/skos/core#definition> "A footnote, endnote or note in the marginalia. This contains the actual note." .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Note> <http://www.w3.org/2004/02/skos/core#prefLabel> "Note" .
+<https://humanities.knaw.nl/ns/text/Page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Page> <http://www.w3.org/2002/07/owl#sameAs> <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/Page> .
+<https://humanities.knaw.nl/ns/text/Page> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Page> <http://www.w3.org/2004/02/skos/core#definition> "A large span of text on the same unit of a certain physical medium." .
+<https://humanities.knaw.nl/ns/text/Page> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Page> <http://www.w3.org/2004/02/skos/core#prefLabel> "Page" .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#p> .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Paragraph> .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/2004/02/skos/core#definition> "A self-contained unit of discourse. Leading/trailing whitespace or newlines are not included." .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Paragraph> <http://www.w3.org/2004/02/skos/core#prefLabel> "Paragraph" .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#q> .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Quote> .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/2004/02/skos/core#definition> "Text representing a quote or citation" .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Quote> <http://www.w3.org/2004/02/skos/core#prefLabel> "Quote" .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#ref> .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Reference> .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/2004/02/skos/core#definition> "A reference to another location in the text, such as to a footnote/endnote" .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Reference> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reference" .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#row> .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Row> .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes a row in a table" .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Row> <http://www.w3.org/2004/02/skos/core#prefLabel> "Row" .
+<https://humanities.knaw.nl/ns/text/Section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Section> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Section> <http://www.w3.org/2004/02/skos/core#definition> "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering." .
+<https://humanities.knaw.nl/ns/text/Section> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Section> <http://www.w3.org/2004/02/skos/core#prefLabel> "Section" .
+<https://humanities.knaw.nl/ns/text/Section> <http://www.w3.org/2004/02/skos/core#related> <https://humanities.knaw.nl/ns/text/Division> .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#s> .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Sentence> .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/2004/02/skos/core#definition> "A grammatically complete syntactic unit, consisting of words." .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Sentence> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sentence" .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#span> .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/String> .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/2004/02/skos/core#definition> "An arbitrary generic grouping of a relatively small amount of text." .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Span> <http://www.w3.org/2004/02/skos/core#prefLabel> "Span" .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#table> .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Table> .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes a table" .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Table> <http://www.w3.org/2004/02/skos/core#prefLabel> "Table" .
+<https://humanities.knaw.nl/ns/text/TextStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/TextStructure> <http://www.w3.org/2004/02/skos/core#definition> "A category that groups concepts that mark structure in text" .
+<https://humanities.knaw.nl/ns/text/TextStructure> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/TextStructure> <http://www.w3.org/2004/02/skos/core#prefLabel> "TextStructure" .
+<https://humanities.knaw.nl/ns/text/TextStructure> <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Token> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Token> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Token> <http://www.w3.org/2004/02/skos/core#definition> "A small unit of text when text is separated on whitespace, punctuation and numerals. Not necessarily carrying much meaning by itself. Not by definition equal to a word." .
+<https://humanities.knaw.nl/ns/text/Token> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Token> <http://www.w3.org/2004/02/skos/core#prefLabel> "Token" .
+<https://humanities.knaw.nl/ns/text/Token> <http://www.w3.org/2004/02/skos/core#related> <https://humanities.knaw.nl/ns/text/Word> .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#space> .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Whitespace> .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/2004/02/skos/core#definition> "Empty parts of the text, i.e. gaps in text, may be either horizontal or vertical." .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Whitespace> <http://www.w3.org/2004/02/skos/core#prefLabel> "Whitespace" .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#w> .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Word> .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2004/02/skos/core#broader> <https://humanities.knaw.nl/ns/text/TextStructure> .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2004/02/skos/core#definition> "A fundamental grammatical meaning-carrying item in text structure." .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2004/02/skos/core#prefLabel> "Word" .
+<https://humanities.knaw.nl/ns/text/Word> <http://www.w3.org/2004/02/skos/core#related> <https://humanities.knaw.nl/ns/text/Token> .
+<https://humanities.knaw.nl/ns/text/n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <rdf:Property> .
+<https://humanities.knaw.nl/ns/text/n> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#n> .
+<https://humanities.knaw.nl/ns/text/n> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/NAttribute> .
+<https://humanities.knaw.nl/ns/text/n> <http://www.w3.org/2004/02/skos/core#definition> "Sequence number" .
+<https://humanities.knaw.nl/ns/text/n> <http://www.w3.org/2004/02/skos/core#inScheme> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+<https://humanities.knaw.nl/ns/text/n> <http://www.w3.org/2004/02/skos/core#prefLabel> "number" .
+_:b0 <https://humanities.knaw.nl/ns/text/Caption> <https://humanities.knaw.nl/ns/text/Caption> .
+_:b0 <https://humanities.knaw.nl/ns/text/Cell> <https://humanities.knaw.nl/ns/text/Cell> .
+_:b0 <https://humanities.knaw.nl/ns/text/Column> <https://humanities.knaw.nl/ns/text/Column> .
+_:b0 <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> <https://humanities.knaw.nl/ns/text/CommonTextVocabulary> .
+_:b0 <https://humanities.knaw.nl/ns/text/Correction> <https://humanities.knaw.nl/ns/text/Correction> .
+_:b0 <https://humanities.knaw.nl/ns/text/Division> <https://humanities.knaw.nl/ns/text/Division> .
+_:b0 <https://humanities.knaw.nl/ns/text/Entity> <https://humanities.knaw.nl/ns/text/Entity> .
+_:b0 <https://humanities.knaw.nl/ns/text/Figure> <https://humanities.knaw.nl/ns/text/Figure> .
+_:b0 <https://humanities.knaw.nl/ns/text/Head> <https://humanities.knaw.nl/ns/text/Head> .
+_:b0 <https://humanities.knaw.nl/ns/text/Highlight> <https://humanities.knaw.nl/ns/text/Highlight> .
+_:b0 <https://humanities.knaw.nl/ns/text/Image> <https://humanities.knaw.nl/ns/text/Image> .
+_:b0 <https://humanities.knaw.nl/ns/text/Letter> <https://humanities.knaw.nl/ns/text/Letter> .
+_:b0 <https://humanities.knaw.nl/ns/text/Line> <https://humanities.knaw.nl/ns/text/Line> .
+_:b0 <https://humanities.knaw.nl/ns/text/Linebreak> <https://humanities.knaw.nl/ns/text/Linebreak> .
+_:b0 <https://humanities.knaw.nl/ns/text/List> <https://humanities.knaw.nl/ns/text/List> .
+_:b0 <https://humanities.knaw.nl/ns/text/ListItem> <https://humanities.knaw.nl/ns/text/ListItem> .
+_:b0 <https://humanities.knaw.nl/ns/text/ListItemMarker> <https://humanities.knaw.nl/ns/text/ListItemMarker> .
+_:b0 <https://humanities.knaw.nl/ns/text/Note> <https://humanities.knaw.nl/ns/text/Note> .
+_:b0 <https://humanities.knaw.nl/ns/text/Page> <https://humanities.knaw.nl/ns/text/Page> .
+_:b0 <https://humanities.knaw.nl/ns/text/Paragraph> <https://humanities.knaw.nl/ns/text/Paragraph> .
+_:b0 <https://humanities.knaw.nl/ns/text/Quote> <https://humanities.knaw.nl/ns/text/Quote> .
+_:b0 <https://humanities.knaw.nl/ns/text/Reference> <https://humanities.knaw.nl/ns/text/Reference> .
+_:b0 <https://humanities.knaw.nl/ns/text/Row> <https://humanities.knaw.nl/ns/text/Row> .
+_:b0 <https://humanities.knaw.nl/ns/text/Section> <https://humanities.knaw.nl/ns/text/Section> .
+_:b0 <https://humanities.knaw.nl/ns/text/Sentence> <https://humanities.knaw.nl/ns/text/Sentence> .
+_:b0 <https://humanities.knaw.nl/ns/text/Span> <https://humanities.knaw.nl/ns/text/Span> .
+_:b0 <https://humanities.knaw.nl/ns/text/Table> <https://humanities.knaw.nl/ns/text/Table> .
+_:b0 <https://humanities.knaw.nl/ns/text/TextStructure> <https://humanities.knaw.nl/ns/text/TextStructure> .
+_:b0 <https://humanities.knaw.nl/ns/text/Token> <https://humanities.knaw.nl/ns/text/Token> .
+_:b0 <https://humanities.knaw.nl/ns/text/Whitespace> <https://humanities.knaw.nl/ns/text/Whitespace> .
+_:b0 <https://humanities.knaw.nl/ns/text/Word> <https://humanities.knaw.nl/ns/text/Word> .
+_:b0 <https://humanities.knaw.nl/ns/text/n> <https://humanities.knaw.nl/ns/text/n> .

@@ -6,7 +6,7 @@ MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 DISTRO := $(shell . /etc/os-release; echo $$ID)
 
-all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld text.nq
+all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld text.nq docs/text.md
 
 %.jsonld: src/%.yaml
 	yq --output-format json $< > $@
@@ -16,6 +16,10 @@ all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld
 
 %.nq: %.json
 	jsonld format -f n-quads -l -a all $< > $@
+
+docs/%.md: %.json
+	python helpers/skosConverter/skos_converter.py to-markdown text.json
+	mv text.md docs/
 
 deps:
 	@echo "Installing dependencies, you probably want to run this with sudo to install globally, but note that jsonld-cli will be installed globally from NPM rather than from a package!"
