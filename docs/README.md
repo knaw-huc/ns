@@ -37,7 +37,8 @@ The texts subject to annotation are distinct from the annotations themselves
 and are delivered in plain text format (UTF-8 encoding). They will be served
 via [TextSurf](https://github.com/knaw-huc/textsurf), which implements a text
 referencing API with addressing syntax derived from
-[RFC5147](https://www.rfc-editor.org/rfc/rfc5147.txt).
+[RFC5147](https://www.rfc-editor.org/rfc/rfc5147.txt), as well as a secondary
+text referencing API inspired by IIIF.
 
 We use the term *untangling* to refer to the process of splitting a rich
 annotated document format like [TEI
@@ -110,6 +111,10 @@ The following example shows an example web annotation:
       }
     },
     {
+      "source": "https://preview.dev.diginfra.org/textsurf/api2/israels|001.txt/0,1234",
+      "type": "Text",
+    },
+    {
       "source": "https://preview.dev.diginfra.org/sources/israels/ii001.xml",
       "type": "Text",
       "selector": {
@@ -178,4 +183,3 @@ The following example shows an example web annotation:
 ```
 
 **Note**: Parts with prefix *TODO:* are still be reconciled with into the new vocabulary.
-
