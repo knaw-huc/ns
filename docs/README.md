@@ -62,7 +62,7 @@ that is distinct but largely derived from the above. The vocabulary is formalise
 
 * Ontology: [text.json](../text.json) with [documentation](text.md)
 * JSON-LD context: [text.jsonld](../text.jsonld) 
-    * This will be served at  <https://humanities.knaw.nl/ns/text.jsonld>.
+    * This will be served at  <https://ns.huc.knaw.nl/text.jsonld>.
 
 ### Anatomy of a Web Annotation
 
@@ -72,7 +72,7 @@ The following example shows an example web annotation:
 {
   "@context": [
     "http://www.w3.org/ns/anno.jsonld",
-    "https://humanities.knaw.nl/ns/text.jsonld",
+    "https://ns.huc.knaw.nl/text.jsonld",
   ],
   "type": "Annotation",
   "id": "https://preview.dev.diginfra.org/annorepo/w3c/israels/9a9422f7-f796-4c4a-afe8-f94579f36c81",
