@@ -59,7 +59,7 @@ Formats like TEI, FoLiA and PageXML themselves define a vocabulary pertaining to
 As our data comes from a variety of sources, we use a common basic vocabulary
 that is distinct but largely derived from the above. The vocabulary is formalised and documented in:
 
-* Ontology with documentation: [text.json](../text.json) 
+* Ontology: [text.json](../text.json) with [documentation](text.md)
 * JSON-LD context: [text.jsonld](../text.jsonld) 
     * This will be served at  <https://humanities.knaw.nl/ns/text.jsonld>.
 
@@ -179,9 +179,3 @@ The following example shows an example web annotation:
 
 **Note**: Parts with prefix *TODO:* are still be reconciled with into the new vocabulary.
 
-## Specification
-
-
-
-AnnoRepo does not build upon an actual triple store and does not actually understand JSON-LD, rather it treats
-it as pure JSON. 
