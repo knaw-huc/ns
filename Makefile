@@ -37,7 +37,7 @@ else ifeq ($(DISTRO),$(filter $(DISTRO), fedora redhat))
 	yum install yq npm
 else ifeq ($(DISTRO),$(filter $(DISTRO), alpine postmarketos))
 	apk add yq npm
-else ifeq ($(DISTRO),mac))
+else ifeq ($(DISTRO),mac)
 	brew install yq npm
 endif
 	npm install -g jsonld-cli
