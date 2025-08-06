@@ -32,7 +32,7 @@
       "@id": "txt:Word",
       "@type": "skos:Concept",
       "prefLabel": "Word",
-      "definition": "A fundamental grammatical meaning-carrying item in text structure.",
+      "definition": "A fundamental grammatical meaning-carrying item in text structure. Often embedded in a Sentence.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "related": "txt:Token",
@@ -42,10 +42,18 @@
       "@id": "txt:Line",
       "@type": "skos:Concept",
       "prefLabel": "Line",
-      "definition": "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines).",
+      "definition": "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines). Note that lines may overlap arbitrarily with sentences and words! An optional line marker/number is not part of the line but precedes it.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": [ "pagexml:TextLine", "tei:Line" ]
+  },
+  "LineMarker" : {
+      "@id": "txt:LineMarker",
+      "@type": "skos:Concept",
+      "prefLabel": "LineMarker",
+      "definition": "A marker that precedes a line, for example an explicit line number in the text",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Sentence" : {
       "@id": "txt:Sentence",
@@ -96,25 +104,42 @@
       "@id": "txt:Section",
       "@type": "skos:Concept",
       "prefLabel": "Section",
-      "definition": "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering.",
+      "definition": "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections often carry numbering, headers, and they can be nested in a hierarchy where sections in sections form subsections, and so on. They may be fully embedded within eachother (nesting), but may not otherwise overlap.",
       "inScheme": "txt:CommonTextVocabulary",
       "related": "txt:Division",
       "broader": "txt:TextStructure"
+  },
+  "SectionMarker": {
+      "@id": "txt:Head",
+      "@type": "skos:Concept",
+      "prefLabel": "Head",
+      "definition": "Number/marker of a section or subsection. Embedded within a section but not within a head",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "sameAs": ["tei:head", "folia:head" ]
   },
   "Page": {
       "@id": "txt:Page",
       "@type": "skos:Concept",
       "prefLabel": "Page",
-      "definition": "A large span of text on the same unit of a certain physical medium.",
+      "definition": "A large span of text on the same unit of a certain physical medium. Pages should not overlap.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": "pagexml:Page"
+  },
+  "PageMarker": {
+      "@id": "txt:PageMarker",
+      "@type": "skos:Concept",
+      "prefLabel": "PageMarker",
+      "definition": "A page number or other form of page marker. Should be embedded within a Page.",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Letter": {
       "@id": "txt:Letter",
       "@type": "skos:Concept",
       "prefLabel": "Letter",
-      "definition": "A body of text that represents written correspondence/communication between people.",
+      "definition": "A body of text that represents written correspondence/communication between people. Letters should not overlap.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure"
   },
@@ -131,7 +156,7 @@
       "@id": "txt:Head",
       "@type": "skos:Concept",
       "prefLabel": "Head",
-      "definition": "Titles of sections and subsections",
+      "definition": "Titles of sections and subsections. If used that way, they are fully embedded within a Section (or Division) and typically the first text in a section, except for the sectionmarker which is not part of the head. ",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:head", "folia:head" ]
@@ -149,7 +174,7 @@
       "@id": "txt:ListItemMarker",
       "@type": "skos:Concept",
       "prefLabel": "ListItemMarker",
-      "definition": "The numeral/bullet/hyphen that marks items in a list.",
+      "definition": "The numeral/bullet/hyphen that marks items in a list. Embedded within a List but not within the ListItem.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure"
   },
@@ -157,7 +182,7 @@
       "@id": "txt:ListItem",
       "@type": "skos:Concept",
       "prefLabel": "ListItem",
-      "definition": "An item in a list. Does not include the numeral/bullet/hyphen.",
+      "definition": "An item in a list. Does not include the marker (numeral/bullet/hyphen).",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:item", "folia:ListItem" ]
@@ -193,10 +218,18 @@
       "@id": "txt:Caption",
       "@type": "skos:Concept",
       "prefLabel": "Caption",
-      "definition": "Text that constitutes the caption for a figure or table",
+      "definition": "Text that constitutes the caption for a figure or table. Does not include the number or marker (see FigureMarker).",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:caption", "folia:Caption"]
+  },
+  "FigureMarker" : {
+      "@id": "txt:FigureMarker",
+      "@type": "skos:Concept",
+      "prefLabel": "FigureMarker",
+      "definition": "Figure number or marker. Should be embedded within a Figure, but not within the caption.",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Table" : {
       "@id": "txt:Table",
@@ -206,6 +239,14 @@
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:table", "folia:Table"]
+  },
+  "TableMarker" : {
+      "@id": "txt:TableMarker",
+      "@type": "skos:Concept",
+      "prefLabel": "TableMarker",
+      "definition": "Table number or marker. Should be embedded within a Table, but not within its caption",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
   },
   "Row" : {
       "@id": "txt:Row",
@@ -237,10 +278,18 @@
       "@id": "txt:Note",
       "@type": "skos:Concept",
       "prefLabel": "Note",
-      "definition": "A footnote, endnote or note in the marginalia. This contains the actual note.",
+      "definition": "A footnote, endnote or note in the marginalia.",
       "broader": "txt:TextStructure",
       "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:note", "folia:Note"]
+  },
+  "NoteMarker" : {
+      "@id": "txt:NoteMarker",
+      "@type": "skos:Concept",
+      "prefLabel": "NoteMarker",
+      "definition": "A marker/number for a note, footnote, endnote. Should be embedded within the note, usually as first text.",
+      "broader": "txt:TextStructure",
+      "inScheme": "txt:CommonTextVocabulary"
   },
   "Reference" : {
       "@id": "txt:Reference",
