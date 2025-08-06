@@ -26,6 +26,9 @@
     "Line" : {
         "@id": "txt:Line"
     },
+    "LineMarker": {
+        "@id": "txt:LineMarker"
+    },
     "Sentence" : {
         "@id": "txt:Sentence"
     },
@@ -44,8 +47,14 @@
     "Section" : {
         "@id": "txt:Section"
     },
+    "SectionMarker": {
+        "@id": "txt:SectionMarker"
+    },
     "Page": {
         "@id": "txt:Page"
+    },
+    "PageMarker": {
+        "@id": "txt:PageMarker"
     },
     "Letter": {
         "@id": "txt:Letter"
@@ -80,6 +89,9 @@
     "Table" : {
         "@id": "txt:Table"
     },
+    "TableMarker": {
+        "@id": "txt:TableMarker"
+    },
     "Row" : {
         "@id": "txt:Row"
     },
@@ -91,6 +103,9 @@
     },
     "Note" : {
         "@id": "txt:Note"
+    },
+    "NoteMarker": {
+        "@id": "txt:NoteMarker"
     },
     "Reference" : {
         "@id": "txt:Reference"
