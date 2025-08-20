@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ns
+spec:
+  selector:
+    matchLabels:
+      app: ns
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+  template:
+    metadata:
+      labels:
+        app: ns
+        external-ingress: enabled
+    spec:
+      containers:
+      - name: ns
+        image: registry.huc.knaw.nl/ns/ns
+        imagePullPolicy: Always
+        resources:
+          requests:
+            cpu: "1000m"
+            memory: "1000Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1000Mi"
+        ports:
+        - containerPort: 80

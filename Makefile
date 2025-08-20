@@ -1,5 +1,5 @@
 .DELETE_ON_ERROR:
-.PHONY: deps docker all clean
+.PHONY: deps docker all clean deploy
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 OS := $(shell uname)
@@ -51,6 +51,7 @@ endif
 docker:
 	docker build -t knaw-huc/ns .
 
-deploy:
+deploy: docker
 	docker tag $(shell docker images knaw-huc/ns --format "table {{.ID}}" | tail -n 1) registry.huc.knaw.nl/ns/ns:latest
 	docker push registry.huc.knaw.nl/ns/ns:latest
+	cd etc/k8s && make deploy && cd -
