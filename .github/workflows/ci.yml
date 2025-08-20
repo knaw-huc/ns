@@ -1,0 +1,11 @@
+name: CI
+on: [ push, pull_request ]
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: make deps
+
+      - name: Make all including validation
+        run: make all
