@@ -50,3 +50,7 @@ endif
 
 docker:
 	docker build -t knaw-huc/ns .
+
+deploy:
+	docker tag $(shell docker images knaw-huc/ns --format "table {{.ID}}" | tail -n 1) registry.huc.knaw.nl/ns/ns:latest
+	docker push registry.huc.knaw.nl/ns/ns:latest
