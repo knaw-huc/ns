@@ -1,5 +1,5 @@
 .DELETE_ON_ERROR:
-.PHONY: deps docker all clean deploy
+.PHONY: deps docker all clean deploy validate
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 OS := $(shell uname)
@@ -10,7 +10,7 @@ else
 	DISTRO = $(shell . /etc/os-release; echo $$ID)
 endif
 
-all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld text.nq text.md text.html text_intro.html index.html
+all: globalise.jsonld provenance.jsonld variant-matching.jsonld huc-di-tt.jsonld republic.jsonld text.nq text.md text.html text_intro.html index.html validate
 
 clean: 
 	rm -f text.nq text.md text.html text_intro.html index.html
@@ -23,6 +23,7 @@ clean:
 
 %.nq: %.json
 	jsonld format -f n-quads -l -a all $< > $@
+	@if grep JsonLdEvent $@; then cat "$@"; echo "ERROR: Conversion to n-quads failed">&2; false; fi
 
 %.md: %.json
 	python helpers/skosConverter/skos_converter.py to-markdown text.json
@@ -32,6 +33,13 @@ clean:
 
 index.html: README.md
 	sed -r "s/\((.*).md\)/(\1.html)/g" $< | pandoc --from gfm --output $@
+
+validate:
+	@for f in *.json; do \
+		jsonld lint $$f > tmp; \
+		if grep JsonLdEvent tmp; then cat tmp; echo "ERROR: Validation error in $$f">&2; rm tmp; false; fi; \
+		echo "$$f .. ok">&2; \
+	done
 
 deps:
 	@echo "Installing dependencies, you probably want to run this with sudo to install globally, but note that jsonld-cli will be installed globally from NPM rather than from a package!"

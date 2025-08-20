@@ -80,6 +80,9 @@
     "Figure" : {
         "@id": "txt:Figure"
     },
+    "FigureMarker" : {
+        "@id": "txt:FigureMarker"
+    },
     "Image" : {
         "@id": "txt:Image"
     },
