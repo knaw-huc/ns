@@ -1,8 +1,16 @@
+WARNING: Dropping property that did not expand into an absolute IRI or keyword.
+{
+  type: [ [32m'JsonLdEvent'[39m ],
+  code: [32m'invalid property'[39m,
+  level: [32m'warning'[39m,
+  message: [32m'Dropping property that did not expand into an absolute IRI or keyword.'[39m,
+  details: { property: [32m'FigureMarker'[39m, expandedProperty: [32m'FigureMarker'[39m }
+}
 <https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#caption> .
 <https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Caption> .
 <https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes the caption for a figure or table" .
+<https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes the caption for a figure or table. Does not include the number or marker (see FigureMarker)." .
 <https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Caption> <http://www.w3.org/2004/02/skos/core#prefLabel> "Caption" .
 <https://ns.huc.knaw.nl/text/Cell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -54,7 +62,8 @@
 <https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#head> .
 <https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/head> .
 <https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2004/02/skos/core#definition> "Titles of sections and subsections" .
+<https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2004/02/skos/core#definition> "Number/marker of a section or subsection. Embedded within a section but not within a head" .
+<https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2004/02/skos/core#definition> "Titles of sections and subsections. If used that way, they are fully embedded within a Section (or Division) and typically the first text in a section, except for the sectionmarker which is not part of the head. " .
 <https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Head> <http://www.w3.org/2004/02/skos/core#prefLabel> "Head" .
 <https://ns.huc.knaw.nl/text/Highlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -72,16 +81,21 @@
 <https://ns.huc.knaw.nl/text/Image> <http://www.w3.org/2004/02/skos/core#prefLabel> "Image" .
 <https://ns.huc.knaw.nl/text/Letter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Letter> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Letter> <http://www.w3.org/2004/02/skos/core#definition> "A body of text that represents written correspondence/communication between people." .
+<https://ns.huc.knaw.nl/text/Letter> <http://www.w3.org/2004/02/skos/core#definition> "A body of text that represents written correspondence/communication between people. Letters should not overlap." .
 <https://ns.huc.knaw.nl/text/Letter> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Letter> <http://www.w3.org/2004/02/skos/core#prefLabel> "Letter" .
 <https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2002/07/owl#sameAs> <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/TextLine> .
 <https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#Line> .
 <https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2004/02/skos/core#definition> "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines)." .
+<https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2004/02/skos/core#definition> "A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines). Note that lines may overlap arbitrarily with sentences and words! An optional line marker/number is not part of the line but precedes it." .
 <https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Line> <http://www.w3.org/2004/02/skos/core#prefLabel> "Line" .
+<https://ns.huc.knaw.nl/text/LineMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://ns.huc.knaw.nl/text/LineMarker> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
+<https://ns.huc.knaw.nl/text/LineMarker> <http://www.w3.org/2004/02/skos/core#definition> "A marker that precedes a line, for example an explicit line number in the text" .
+<https://ns.huc.knaw.nl/text/LineMarker> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
+<https://ns.huc.knaw.nl/text/LineMarker> <http://www.w3.org/2004/02/skos/core#prefLabel> "LineMarker" .
 <https://ns.huc.knaw.nl/text/Linebreak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Linebreak> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#lb> .
 <https://ns.huc.knaw.nl/text/Linebreak> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Linebreak> .
@@ -100,27 +114,37 @@
 <https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#item> .
 <https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/ListItem> .
 <https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2004/02/skos/core#definition> "An item in a list. Does not include the numeral/bullet/hyphen." .
+<https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2004/02/skos/core#definition> "An item in a list. Does not include the marker (numeral/bullet/hyphen)." .
 <https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/ListItem> <http://www.w3.org/2004/02/skos/core#prefLabel> "ListItem" .
 <https://ns.huc.knaw.nl/text/ListItemMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#definition> "The numeral/bullet/hyphen that marks items in a list." .
+<https://ns.huc.knaw.nl/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#definition> "The numeral/bullet/hyphen that marks items in a list. Embedded within a List but not within the ListItem." .
 <https://ns.huc.knaw.nl/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/ListItemMarker> <http://www.w3.org/2004/02/skos/core#prefLabel> "ListItemMarker" .
 <https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#note> .
 <https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Note> .
 <https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2004/02/skos/core#definition> "A footnote, endnote or note in the marginalia. This contains the actual note." .
+<https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2004/02/skos/core#definition> "A footnote, endnote or note in the marginalia." .
 <https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Note> <http://www.w3.org/2004/02/skos/core#prefLabel> "Note" .
+<https://ns.huc.knaw.nl/text/NoteMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://ns.huc.knaw.nl/text/NoteMarker> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
+<https://ns.huc.knaw.nl/text/NoteMarker> <http://www.w3.org/2004/02/skos/core#definition> "A marker/number for a note, footnote, endnote. Should be embedded within the note, usually as first text." .
+<https://ns.huc.knaw.nl/text/NoteMarker> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
+<https://ns.huc.knaw.nl/text/NoteMarker> <http://www.w3.org/2004/02/skos/core#prefLabel> "NoteMarker" .
 <https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/2002/07/owl#sameAs> <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/Page> .
 <https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/2004/02/skos/core#definition> "A large span of text on the same unit of a certain physical medium." .
+<https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/2004/02/skos/core#definition> "A large span of text on the same unit of a certain physical medium. Pages should not overlap." .
 <https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Page> <http://www.w3.org/2004/02/skos/core#prefLabel> "Page" .
+<https://ns.huc.knaw.nl/text/PageMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://ns.huc.knaw.nl/text/PageMarker> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
+<https://ns.huc.knaw.nl/text/PageMarker> <http://www.w3.org/2004/02/skos/core#definition> "A page number or other form of page marker. Should be embedded within a Page." .
+<https://ns.huc.knaw.nl/text/PageMarker> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
+<https://ns.huc.knaw.nl/text/PageMarker> <http://www.w3.org/2004/02/skos/core#prefLabel> "PageMarker" .
 <https://ns.huc.knaw.nl/text/Paragraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Paragraph> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#p> .
 <https://ns.huc.knaw.nl/text/Paragraph> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Paragraph> .
@@ -151,7 +175,7 @@
 <https://ns.huc.knaw.nl/text/Row> <http://www.w3.org/2004/02/skos/core#prefLabel> "Row" .
 <https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/2004/02/skos/core#definition> "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering." .
+<https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/2004/02/skos/core#definition> "A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections often carry numbering, headers, and they can be nested in a hierarchy where sections in sections form subsections, and so on. They may be fully embedded within eachother (nesting), but may not otherwise overlap." .
 <https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/2004/02/skos/core#prefLabel> "Section" .
 <https://ns.huc.knaw.nl/text/Section> <http://www.w3.org/2004/02/skos/core#related> <https://ns.huc.knaw.nl/text/Division> .
@@ -176,6 +200,11 @@
 <https://ns.huc.knaw.nl/text/Table> <http://www.w3.org/2004/02/skos/core#definition> "Text that constitutes a table" .
 <https://ns.huc.knaw.nl/text/Table> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Table> <http://www.w3.org/2004/02/skos/core#prefLabel> "Table" .
+<https://ns.huc.knaw.nl/text/TableMarker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://ns.huc.knaw.nl/text/TableMarker> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
+<https://ns.huc.knaw.nl/text/TableMarker> <http://www.w3.org/2004/02/skos/core#definition> "Table number or marker. Should be embedded within a Table, but not within its caption" .
+<https://ns.huc.knaw.nl/text/TableMarker> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
+<https://ns.huc.knaw.nl/text/TableMarker> <http://www.w3.org/2004/02/skos/core#prefLabel> "TableMarker" .
 <https://ns.huc.knaw.nl/text/TextStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://ns.huc.knaw.nl/text/TextStructure> <http://www.w3.org/2004/02/skos/core#definition> "A category that groups concepts that mark structure in text" .
 <https://ns.huc.knaw.nl/text/TextStructure> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
@@ -198,7 +227,7 @@
 <https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2002/07/owl#sameAs> <http://www.tei-c.org/ns/1.0#w> .
 <https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/folia/v2/Word> .
 <https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2004/02/skos/core#broader> <https://ns.huc.knaw.nl/text/TextStructure> .
-<https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2004/02/skos/core#definition> "A fundamental grammatical meaning-carrying item in text structure." .
+<https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2004/02/skos/core#definition> "A fundamental grammatical meaning-carrying item in text structure. Often embedded in a Sentence." .
 <https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2004/02/skos/core#inScheme> <https://ns.huc.knaw.nl/text/CommonTextVocabulary> .
 <https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2004/02/skos/core#prefLabel> "Word" .
 <https://ns.huc.knaw.nl/text/Word> <http://www.w3.org/2004/02/skos/core#related> <https://ns.huc.knaw.nl/text/Token> .
@@ -221,20 +250,25 @@ _:b0 <https://ns.huc.knaw.nl/text/Highlight> <https://ns.huc.knaw.nl/text/Highli
 _:b0 <https://ns.huc.knaw.nl/text/Image> <https://ns.huc.knaw.nl/text/Image> .
 _:b0 <https://ns.huc.knaw.nl/text/Letter> <https://ns.huc.knaw.nl/text/Letter> .
 _:b0 <https://ns.huc.knaw.nl/text/Line> <https://ns.huc.knaw.nl/text/Line> .
+_:b0 <https://ns.huc.knaw.nl/text/LineMarker> <https://ns.huc.knaw.nl/text/LineMarker> .
 _:b0 <https://ns.huc.knaw.nl/text/Linebreak> <https://ns.huc.knaw.nl/text/Linebreak> .
 _:b0 <https://ns.huc.knaw.nl/text/List> <https://ns.huc.knaw.nl/text/List> .
 _:b0 <https://ns.huc.knaw.nl/text/ListItem> <https://ns.huc.knaw.nl/text/ListItem> .
 _:b0 <https://ns.huc.knaw.nl/text/ListItemMarker> <https://ns.huc.knaw.nl/text/ListItemMarker> .
 _:b0 <https://ns.huc.knaw.nl/text/Note> <https://ns.huc.knaw.nl/text/Note> .
+_:b0 <https://ns.huc.knaw.nl/text/NoteMarker> <https://ns.huc.knaw.nl/text/NoteMarker> .
 _:b0 <https://ns.huc.knaw.nl/text/Page> <https://ns.huc.knaw.nl/text/Page> .
+_:b0 <https://ns.huc.knaw.nl/text/PageMarker> <https://ns.huc.knaw.nl/text/PageMarker> .
 _:b0 <https://ns.huc.knaw.nl/text/Paragraph> <https://ns.huc.knaw.nl/text/Paragraph> .
 _:b0 <https://ns.huc.knaw.nl/text/Quote> <https://ns.huc.knaw.nl/text/Quote> .
 _:b0 <https://ns.huc.knaw.nl/text/Reference> <https://ns.huc.knaw.nl/text/Reference> .
 _:b0 <https://ns.huc.knaw.nl/text/Row> <https://ns.huc.knaw.nl/text/Row> .
 _:b0 <https://ns.huc.knaw.nl/text/Section> <https://ns.huc.knaw.nl/text/Section> .
+_:b0 <https://ns.huc.knaw.nl/text/SectionMarker> <https://ns.huc.knaw.nl/text/Head> .
 _:b0 <https://ns.huc.knaw.nl/text/Sentence> <https://ns.huc.knaw.nl/text/Sentence> .
 _:b0 <https://ns.huc.knaw.nl/text/Span> <https://ns.huc.knaw.nl/text/Span> .
 _:b0 <https://ns.huc.knaw.nl/text/Table> <https://ns.huc.knaw.nl/text/Table> .
+_:b0 <https://ns.huc.knaw.nl/text/TableMarker> <https://ns.huc.knaw.nl/text/TableMarker> .
 _:b0 <https://ns.huc.knaw.nl/text/TextStructure> <https://ns.huc.knaw.nl/text/TextStructure> .
 _:b0 <https://ns.huc.knaw.nl/text/Token> <https://ns.huc.knaw.nl/text/Token> .
 _:b0 <https://ns.huc.knaw.nl/text/Whitespace> <https://ns.huc.knaw.nl/text/Whitespace> .

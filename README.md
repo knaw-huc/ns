@@ -1,18 +1,25 @@
-# namespaces
+# Namespaces
 
-Site for hosting custom namespaces
+Site for hosting custom namespaces for the [KNAW Humanities Cluster](https://huc.knaw.nl).
+All are served under <https://ns.huc.knaw.nl> and sources are in <https://github.com/knaw-huc/ns>. You can use content negotiation or any of the links below:
 
-## Ontologies
+## Table of Contents
 
-- [text](text.json) - [Documentation](docs/text.md)
+### Documentation
 
-## JSON-LD Contexts
+* [Text & Annotation vocabulary](text_intro.md)
 
-- [text](text.jsonld)
-- [huc-di-tt](huc-di-tt.jsonld)
-- [Provenance](provenance.jsonld)
-- [Republic](republic.jsonld)
-- [Variant Matching](variant-matching.jsonld)
-- [Globalise](globalise.jsonld)
-- [SKOS](skos.jsonld)
+### Ontologies & Contexts
 
+* **text**: Ontology of concepts to mark structure in text
+    * [Documentation](text.md) - [Ontology](text.json) - [JSON-LD Context](text.jsonld) 
+* **huc-di-tt**: Old aliases for Team Text (deprecated)
+    * [JSON-LD Context](huc-di-tt.jsonld)
+* **republic**: Context for the Republic project
+    * [JSON-LD Context](republic.jsonld)
+* **variant Matching**: Context for variant matching, as used in the Golden Agents project
+    * [JSON-LD Context](variant-matching.jsonld)
+* **globalise**: Context for variant matching, as used in the Golden Agents project
+    * [JSON-LD Context](globalise.jsonld)
+* **skos**: Context for [SKOS](https://www.w3.org/TR/skos-reference/)
+    * [JSON-LD Context](skos.jsonld)
