@@ -9,7 +9,7 @@ jobs:
             submodules: recursive
 
       - name: Install dependencies
-        run: make deps
+        run: sudo make deps
 
       - name: Make all including validation
         run: make all

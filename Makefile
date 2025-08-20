@@ -46,7 +46,7 @@ deps:
 ifeq ($(DISTRO),arch)
 	pacman -S yq npm pandoc
 else ifeq ($(DISTRO),$(filter $(DISTRO), debian ubuntu))
-	apt-get install yq npm pandoc
+	DEBIAN_FRONTEND=noninteractive apt-get install -y yq npm pandoc
 else ifeq ($(DISTRO),$(filter $(DISTRO), fedora redhat))
 	yum install yq npm pandoc
 else ifeq ($(DISTRO),$(filter $(DISTRO), alpine postmarketos))
