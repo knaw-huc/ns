@@ -7,7 +7,7 @@ _URI:_ <https://ns.huc.knaw.nl/text/TextStructure>
 
 ## Caption
 
-_Definition:_ Text that constitutes the caption for a figure or table  
+_Definition:_ Text that constitutes the caption for a figure or table. Does not include the number or marker (see FigureMarker).  
 _URI:_ <https://ns.huc.knaw.nl/text/Caption>
 _Same as:_ <http://www.tei-c.org/ns/1.0#caption>, <https://w3id.org/folia/v2/Caption>  
 
@@ -55,7 +55,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#figure>, <https://w3id.org/folia/v2/Figu
 
 ## Head
 
-_Definition:_ Titles of sections and subsections  
+_Definition:_ Number/marker of a section or subsection. Embedded within a section but not within a head  
 _URI:_ <https://ns.huc.knaw.nl/text/Head>
 _Same as:_ <http://www.tei-c.org/ns/1.0#head>, <https://w3id.org/folia/v2/head>  
 
@@ -76,15 +76,21 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#graphic>
 
 ## Letter
 
-_Definition:_ A body of text that represents written correspondence/communication between people.  
+_Definition:_ A body of text that represents written correspondence/communication between people. Letters should not overlap.  
 _URI:_ <https://ns.huc.knaw.nl/text/Letter>
 
 
 ## Line
 
-_Definition:_ A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines).  
+_Definition:_ A line in text structure. A line is physically stretches accross one specific spatial dimension (the presentational orientation is not specified nor implied). A line itself by definitions contains no linebreaks/newlines (including leading/trailing newlines). Note that lines may overlap arbitrarily with sentences and words! An optional line marker/number is not part of the line but precedes it.  
 _URI:_ <https://ns.huc.knaw.nl/text/Line>
 _Same as:_ <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/TextLine>, <http://www.tei-c.org/ns/1.0#Line>  
+
+
+## LineMarker
+
+_Definition:_ A marker that precedes a line, for example an explicit line number in the text  
+_URI:_ <https://ns.huc.knaw.nl/text/LineMarker>
 
 
 ## Linebreak
@@ -103,29 +109,41 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#list>, <https://w3id.org/folia/v2/List>
 
 ## ListItem
 
-_Definition:_ An item in a list. Does not include the numeral/bullet/hyphen.  
+_Definition:_ An item in a list. Does not include the marker (numeral/bullet/hyphen).  
 _URI:_ <https://ns.huc.knaw.nl/text/ListItem>
 _Same as:_ <http://www.tei-c.org/ns/1.0#item>, <https://w3id.org/folia/v2/ListItem>  
 
 
 ## ListItemMarker
 
-_Definition:_ The numeral/bullet/hyphen that marks items in a list.  
+_Definition:_ The numeral/bullet/hyphen that marks items in a list. Embedded within a List but not within the ListItem.  
 _URI:_ <https://ns.huc.knaw.nl/text/ListItemMarker>
 
 
 ## Note
 
-_Definition:_ A footnote, endnote or note in the marginalia. This contains the actual note.  
+_Definition:_ A footnote, endnote or note in the marginalia.  
 _URI:_ <https://ns.huc.knaw.nl/text/Note>
 _Same as:_ <http://www.tei-c.org/ns/1.0#note>, <https://w3id.org/folia/v2/Note>  
 
 
+## NoteMarker
+
+_Definition:_ A marker/number for a note, footnote, endnote. Should be embedded within the note, usually as first text.  
+_URI:_ <https://ns.huc.knaw.nl/text/NoteMarker>
+
+
 ## Page
 
-_Definition:_ A large span of text on the same unit of a certain physical medium.  
+_Definition:_ A large span of text on the same unit of a certain physical medium. Pages should not overlap.  
 _URI:_ <https://ns.huc.knaw.nl/text/Page>
 _Same as:_ <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/Page>  
+
+
+## PageMarker
+
+_Definition:_ A page number or other form of page marker. Should be embedded within a Page.  
+_URI:_ <https://ns.huc.knaw.nl/text/PageMarker>
 
 
 ## Paragraph
@@ -158,7 +176,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#row>, <https://w3id.org/folia/v2/Row>
 
 ## Section
 
-_Definition:_ A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections sometimes carry numbering.  
+_Definition:_ A grouping of a larger amount of text in discourse. This is more specific than 'Division'. Sections often carry numbering, headers, and they can be nested in a hierarchy where sections in sections form subsections, and so on. They may be fully embedded within eachother (nesting), but may not otherwise overlap.  
 _URI:_ <https://ns.huc.knaw.nl/text/Section>
 _Related:_ <https://ns.huc.knaw.nl/text/Division>  
 
@@ -184,6 +202,12 @@ _URI:_ <https://ns.huc.knaw.nl/text/Table>
 _Same as:_ <http://www.tei-c.org/ns/1.0#table>, <https://w3id.org/folia/v2/Table>  
 
 
+## TableMarker
+
+_Definition:_ Table number or marker. Should be embedded within a Table, but not within its caption  
+_URI:_ <https://ns.huc.knaw.nl/text/TableMarker>
+
+
 ## Token
 
 _Definition:_ A small unit of text when text is separated on whitespace, punctuation and numerals. Not necessarily carrying much meaning by itself. Not by definition equal to a word.  
@@ -200,7 +224,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#space>, <https://w3id.org/folia/v2/White
 
 ## Word
 
-_Definition:_ A fundamental grammatical meaning-carrying item in text structure.  
+_Definition:_ A fundamental grammatical meaning-carrying item in text structure. Often embedded in a Sentence.  
 _URI:_ <https://ns.huc.knaw.nl/text/Word>
 _Same as:_ <https://w3id.org/folia/v2/Word>, <http://www.tei-c.org/ns/1.0#w>  
 _Related:_ <https://ns.huc.knaw.nl/text/Token>  

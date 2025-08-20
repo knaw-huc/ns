@@ -60,8 +60,8 @@ Formats like TEI, FoLiA and PageXML themselves define a vocabulary pertaining to
 As our data comes from a variety of sources, we use a common basic vocabulary
 that is distinct but largely derived from the above. The vocabulary is formalised and documented in:
 
-* Ontology: [text.json](../text.json) with [documentation](text.md)
-* JSON-LD context: [text.jsonld](../text.jsonld) 
+* Ontology: [text.json](text.json) with [documentation](text.md)
+* JSON-LD context: [text.jsonld](text.jsonld) 
     * This will be served at  <https://ns.huc.knaw.nl/text.jsonld>.
 
 ### Anatomy of a Web Annotation
