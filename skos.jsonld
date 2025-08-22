@@ -10,6 +10,6 @@
         "definition": { "@id": "skos:definition"},
         "prefLabel": { "@id": "skos:prefLabel"},
         "Concept": { "@id": "skos:Concept" },
-        "Concept": { "@id": "skos:ConceptScheme" }
+        "ConceptScheme": { "@id": "skos:ConceptScheme" }
     }
 }
