@@ -1,4 +1,4 @@
-PHONY: deploy restart status logs
+.PHONY: deploy restart status logs
 
 deploy:
 	for f in *.yml; do kubectl apply -f $$f --namespace ns --context k8s-10-26-2-0; done
