@@ -58,11 +58,19 @@ service infrastructure.
 
 Formats like TEI, FoLiA and PageXML themselves define a vocabulary pertaining to textual structure and annotations.
 As our data comes from a variety of sources, we use a common basic vocabulary
-that is distinct but largely derived from the above. The vocabulary is formalised and documented in:
+that is distinct but largely derived from the above. The vocabulary is formalised and documented in two different modules:
 
-* Ontology: [text.json](text.json) with [documentation](text.md)
-* JSON-LD context: [text.jsonld](text.jsonld) 
-    * This will be served at  <https://ns.huc.knaw.nl/text.jsonld>.
+1. Text structure (SKOS)
+    * Ontology: [text.json](text.json) with [documentation](text.md)
+    * JSON-LD context: [text.jsonld](text.jsonld) 
+        * This will be served at  <https://ns.huc.knaw.nl/text.jsonld>.
+2. Properties for Text & Annotations
+    * Ontology: [textannodata.json](textannodata.json)
+        * This ontology is kept as small as possible, and contains only those properties
+          for which we found no suitable mapping in an existing ontology.
+    * JSON-LD context: [textannodata.jsonld](textannodata.jsonld) (documentation: see *Mapping properties* section)
+        * We prefer to map properties to existing properties in other ontologies (such as schema.org)
+        * This will be served at  <https://ns.huc.knaw.nl/textannodata.jsonld>.
 
 ### Anatomy of a Web Annotation
 
@@ -73,6 +81,7 @@ The following example shows an example web annotation:
   "@context": [
     "http://www.w3.org/ns/anno.jsonld",
     "https://ns.huc.knaw.nl/text.jsonld",
+    "https://ns.huc.knaw.nl/textannodata.jsonld",
   ],
   "type": "Annotation",
   "id": "https://preview.dev.diginfra.org/annorepo/w3c/israels/9a9422f7-f796-4c4a-afe8-f94579f36c81",
@@ -81,17 +90,28 @@ The following example shows an example web annotation:
   "body": {
     "id": "urn:someproject:letter:001",
     "type": "Letter",
-    "TODO:manifest": "https://preview.dev.diginfra.org/files/israels/static/manifests/letters/ii001.json",
-    "TODO:correspondent": "Jo van Gogh-Bonger",
-    "TODO:file": "ii001",
-    "TODO:institution": "VGM",
-    "TODO:location": "Amsterdam, The Netherlands",
+    "manifest": "https://preview.dev.diginfra.org/files/israels/static/manifests/letters/ii001.json",
+    "recipient": {
+            "type": "Person",
+            "name": "Jo van Gogh-Bonger",
+    },
+    "identifier": "ii001",
+    "provider": {
+            "type": "Organization",
+            "name": "Van Gogh Museum",
+    }
+    "location": {
+            "type": "Place",
+            "name": "Amsterdam, The Netherlands",
+    }
     "TODO:msId": "b8564V2008",
-    "TODO:period": "1891-02-02",
-    "TODO:periodLong": "",
-    "TODO:sender": "Isaac Israëls",
-    "TODO:nextLetter": "urn:israels:letter:ii002",
-    "title": {
+    "datePublished": "1891-02-02",
+    "sender": {
+            "type": "Person",
+            "name": "Isaac Israëls",
+    },
+    "next": "urn:israels:letter:ii002",
+    "titles": {
       "nl": "Isaac Israëls aan Jo van Gogh-Bonger. Amsterdam, 2 februari 1891.",
       "en": "Isaac Israëls to Jo van Gogh-Bonger. Amsterdam, 2 February 1891."
     }        
@@ -183,3 +203,95 @@ The following example shows an example web annotation:
 ```
 
 **Note**: Parts with prefix *TODO:* are still be reconciled with into the new vocabulary.
+
+### Mapping properties
+
+We try to map properties for text and annotation, as extracted from the various sources (e.g. TEI, PageXML), to existing linked open data ontologies. Only if no suitable property can be found, do we create one of our own in [textannodata.json](textannodata.json).
+
+The following custom target properties are defined in the [textannodata.json](textannodata.json) ontology:
+
+**Note:** The links in these table are URIs in the RDF sense. Whilst it is good practise that they are resolvable as URLs, they may not be necessarily so.
+
+| Alias | Property | Description        |
+| ----- | -------- | ------------------ |
+| n | <https://ns.huc.knaw.nl/textannodata/n> |  Sequence number |
+| style | <https://ns.huc.knaw.nl/textannodata/style> |  Encodes the rendition style of a piece of text. The vocabulary is open-ended and may contain terms as 'italic', 'bold','underlined', common color names (red,blue,green) or `#rrggbb` color codes. This property is expected on Highlight annotations. |
+
+The following properties from existing ontologies are defined in the [textannodata.jsonld](textannodata.jsonld) JSON-LD context:
+
+| Alias | Property | Description        |
+| ----- | -------- | ------------------ |
+| address | <http://schema.org/address> |  Physical address of the item |
+| dateCreated | <http://schema.org/dateCreated> |  Date of creation |
+| dateModified | <http://schema.org/dateModified> |  Date of modification |
+| datePublished | <http://schema.org/datePublished> |  Date of first publication |
+| description | <http://purl.org/dc/terms/description> | Description of something |
+| descriptions | <http://purl.org/dc/terms/description> | Description of something (in `@language` container) |
+| editor | <http://schema.org/editor> |  Specifies the Person who edited the CreativeWork. |
+| genre | <http://schema.org/genre> | Genre of the creative work (text or URL) |
+| identifier | <http://purl.org/dc/terms/identifier> | An unambiguous reference to the resource within a given context. Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs. |
+| image | <http://schema.org/image> | An image of the item |
+| keywords | <http://schema.org/keywords> | Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property. | 
+| knows | <http://schema.org/knows> | The most generic bi-directional social/work relation. Used with schema:Person (domain + range). |
+| license | <http://schema.org/license> | A license document that applies to this content, typically indicated by URL |
+| location | <http://schema.org/location> | Location of something (e.g. where the resource was published), text or URL or Place |
+| manifest | <http://iiif.io/api/presentation/3#hasManifests> | Link to IIIF manifest (may be list of multiple) |
+| participant | <http://schema.org/participants> | Other co-agents that participated in the action indirectly. |
+| producer | <http://schema.org/producer> | The person or organization who produced the work. Expects a non-literal. |
+| provider | <http://schema.org/provider> | The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller. Expects a non-literal (Organization or Person) |
+| publisher | <http://purl.org/dc/terms/publisher> | An entity responsible for making the resource available. Expects a non-literal (Organization or Person) |
+| recipient | <http://schema.org/recipient> | The participant who is at the receiving end of the action. Expects a non-literal (Organization or Person) |
+| references | <http://purl.org/dc/terms/references> | A related resource that is referenced, cited, or otherwise pointed to by the described resource. This property is intended to be used with non-literal values. |
+| relation | <http://purl.org/dc/terms/relation> | A related resource. Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided. |
+| replaces | <http://purl.org/dc/terms/replaces> |  A related resource that is supplanted, displaced, or superseded by the described resource. this property is intended to be used with non-literal values. |
+| sender | <http://schema.org/sender> | The participant who is at the sending end of the action. |
+| sourceUrl | <http://purl.org/dc/terms/source> | URL to where a resource was sourced from |
+| subject | <http://purl.org/dc/terms/subject> | A topic of the resource. Recommended practice is to refer to the subject with a URI. If this is not possible or feasible, a literal value that identifies the subject may be provided. Both should preferably refer to a subject in a controlled vocabulary. |
+| title | <http://purl.org/dc/terms/title> | Title |
+| titles | <http://purl.org/dc/terms/title> | Title (in `@language` container) |
+
+The following (non-exhaustive!) properties come from the [W3C Web Annotation (anno.jsonld)](anno.jsonld) JSON-LD context:
+
+| Alias | Property | Description        |
+| ----- | -------- | ------------------ |
+| audience | <http://schema.org/audience> | An intended audience, i.e. a group for whom something was created. |
+| created | <http://purl.org/dc/terms/created> | Date of creation |
+| creator | <http://purl.org/dc/terms/creator> | An entity primarily responsible for making the resource. Typically, the name of a Creator should be used to indicate the entity. |
+| conformsTo | <http://purl.org/dc/terms/conformsTo>  | An established standard to which the described resource conforms. |
+| email  | <http://xmlns.com/foaf/0.1/email> | E-mail address |
+| format | <http://purl.org/dc/elements/1.1/format> | The file format, physical medium, or dimensions of the resource. | 
+| generator | <http://www.w3.org/ns/activitystreams#generator> | Identifies the entity (e.g. an application) that generated the object.  |
+| generated | <http://purl.org/dc/terms/issued> | Date of generation/publication/generation |
+| language | <http://purl.org/dc/elements/1.1/language> | A language of the resource.  Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [IETF-BCP47] language tag. |
+| label | <http://www.w3.org/2000/01/rdf-schema#label> | Ties a human-readable label to something |
+| modified | <http://purl.org/dc/terms/modified> | Date of modification |
+| next | <http://www.w3.org/ns/activitystreams#next> | Used to link one item to the next one (of the same type) in a sequence |
+| partOf | <http://www.w3.org/ns/activitystreams#partOf> | marks something as a part of something bigger |
+| prev | <http://www.w3.org/ns/activitystreams#prev> | Used to link one item to the previous one (of the same type) in a sequence |
+| rights | <http://purl.org/dc/elements/1.1/rights> | Information about rights held in and over the resource. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided. | 
+
+The following aliases from the [W3C Web Annotation (anno.jsonld)](anno.jsonld) JSON-LD context are [overridden](https://www.w3.org/TR/json-ld/#advanced-context-usage) by definitions in [textannodata.jsonld](textannodata.jsonld):
+
+| Alias | W3C Web Annotation | Overriden        |
+| ----- | -------- | ------------------ |
+| Person | <http://xmlns.com/foaf/0.1/Person> | <http://schema.org/Person> |
+| Organization | <http://xmlns.com/foaf/0.1/Organization> | <http://schema.org/Organization> |
+| name | <http://xmlns.com/foaf/0.1/name>  | <http://schema.org/name> | 
+
+The following table maps some (non-exhaustive) [old-style properties (not further formalised)](https://github.com/knaw-huc/team-text-backlog/issues/128) to the new ones:
+
+| Old | New     |
+| ----- | -------- |
+| institution | provider |
+| eid/entityId | identifier |
+| fileId/letterId/pageId | identifier |
+| idno | identifier |
+| headerId | identifier |
+| nextLetter/nextFile/nextPage | next |
+| prevLetter/prevFile/prevPage | prev |
+| correspondent | recipient (structured!) |
+| sender | sender (structured!) |
+| pageUrl | url |
+| displayLabel | label |
+| rend | style |
+

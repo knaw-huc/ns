@@ -1,6 +1,7 @@
 {
   "@context": {
     "txt": "https://ns.huc.knaw.nl/text/",
+    "txtdata": "https://ns.huc.knaw.nl/textdata/",
     "dc": "http://purl.org/dc/elements/1.1/",
     "dcterms": "http://purl.org/dc/terms/",
     "oa": "http://www.w3.org/ns/oa#",
@@ -11,6 +12,7 @@
     "tei": "http://www.tei-c.org/ns/1.0#",
     "folia": "https://w3id.org/folia/v2/",
     "iiif": "http://iiif.io/api/presentation/3#",
+    "schema": "http://schema.org",
     "CommonTextVocabulary" : {
         "@id": "txt:CommonTextVocabulary"
     },
@@ -131,32 +133,6 @@
           "@container": "@set"
         }
       }
-    },
-    "n": {
-        "@id": "txt:n",
-        "@type": "@id"
-    },
-    "title": {
-        "@id": "dcterms:title",
-        "@container": "@language"
-    },
-    "label": {
-        "@id": "rdfs:label"
-    },
-    "comment": {
-        "@id": "rdfs:comment"
-    },
-    "description": {
-        "@id": "dcterms:description",
-        "@container": "@language"
-    },
-    "title": {
-        "@id": "dcterms:title",
-        "@container": "@language"
-    },
-    "sameAs": {
-        "@id": "owl:sameAs",
-        "@type": "@id"
     }
   }
 }
