@@ -6,9 +6,7 @@
   "CommonTextVocabulary": {
         "@id": "txt:CommonTextVocabulary",
         "@type": "skos:ConceptScheme",
-        "title": {
-            "en": "Common Text Vocabulary"
-        },
+        "dcterms:title": "Common Text Vocabulary",
         "hasTopConcept": "txt:TextStructure"
   },
   "TextStructure": {
@@ -295,7 +293,7 @@
       "@id": "txt:Reference",
       "@type": "skos:Concept",
       "prefLabel": "Reference",
-      "definition": "A reference to another location in the text, such as to a footnote/endnote",
+      "definition": "A reference to another location, either in the text, such as to a footnote/endnote, or an external URI. Use with schema:url.",
       "broader": "txt:TextStructure",
       "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:ref", "folia:Reference"]
@@ -313,7 +311,7 @@
       "@id": "txt:Highlight",
       "@type": "skos:Concept",
       "prefLabel": "Highlight",
-      "definition": "A highlighted/emphasised piece of text, in some presentational form.",
+      "definition": "A highlighted/emphasised/stylized piece of text, in some presentational form. Use the style property to encode the form.",
       "broader": "txt:TextStructure",
       "inScheme": "txt:CommonTextVocabulary",
       "sameAs": ["tei:hi", "folia:TextMarkupStyle"]
@@ -326,13 +324,5 @@
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:corr", "folia:Correction"]
-  },
-  "n": {
-      "@id": "txt:n",
-      "@type": "rdf:Property",
-      "prefLabel": "number",
-      "definition": "Sequence number",
-      "inScheme": "txt:CommonTextVocabulary",
-      "sameAs": ["tei:n", "folia:NAttribute"]
   }
 }

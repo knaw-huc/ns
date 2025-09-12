@@ -1,0 +1,196 @@
+{
+  "@context": {
+    "tad": "https://ns.huc.knaw.nl/textannodata/",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "oa": "http://www.w3.org/ns/oa#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "pagexml": "http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/",
+    "tei": "http://www.tei-c.org/ns/1.0#",
+    "folia": "https://w3id.org/folia/v2/",
+    "iiif": "http://iiif.io/api/presentation/3#",
+    "schema": "http://schema.org",
+    "n": {
+        "@id": "tad:n"
+    },
+    "style": {
+        "@id": "tad:style"
+    },
+    "name": {
+        "@id": "schema:name"
+    },
+    "url": {
+        "@id": "schema:url"
+    },
+    "email": {
+        "@id": "schema:email"
+    },
+    "identifier": {
+        "@id": "dcterms:identifier"
+    },
+    "title": {
+        "@id": "dcterms:title"
+    },
+    "titles": {
+        "@id": "dcterms:title",
+        "@container": "@language"
+    },
+    "label": {
+        "@id": "rdfs:label"
+    },
+    "labels": {
+        "@id": "rdfs:label",
+        "@container": "@language"
+    },
+    "description": {
+        "@id": "dcterms:description"
+    },
+    "descriptions": {
+        "@id": "dcterms:description",
+        "@container": "@language"
+    },
+    "sourceUrl": {
+        "@id": "dcterms:source"
+    },
+    "editor": {
+        "@id": "schema:editor"
+    },
+    "genre": {
+        "@id": "schema:genre"
+    },
+    "license": {
+        "@id": "schema:license"
+    },
+    "datePublished": {
+        "@id": "schema:datePublished"
+    },
+    "dateCreated": {
+        "@id": "schema:dateCreated"
+    },
+    "dateModified": {
+        "@id": "schema:dateModified"
+    },
+    "keywords": {
+        "@id": "schema:keywords"
+    },
+    "relation": {
+        "@id": "dcterms:relation"
+    },
+    "references": {
+        "@id": "dcterms:references",
+        "@type": "@id"
+    },
+    "publisher": {
+        "@id": "dcterms:publisher"
+    },
+    "replaces": {
+        "@id": "dcterms:replaces",
+        "@type": "@id"
+    },
+    "manifest": {
+        "@id": "iiif:hasManifests",
+        "@container": "@list"
+    },
+    "recipient": {
+        "@id": "schema:recipient",
+        "@type": "@id"
+    },
+    "participant": {
+        "@id": "schema:participant",
+        "@type": "@id"
+    },
+    "sender": {
+        "@id": "schema:sender",
+        "@type": "@id"
+    },
+    "sameAs": {
+        "@id": "owl:sameAs",
+        "@type": "@id"
+    },
+    "affiliation": {
+        "@id": "schema:affiliation", 
+        "@type": "@id"
+    },
+    "author": {
+        "@id": "schema:author",
+        "@type": "@id"
+    },
+    "producer": {
+        "@id": "schema:producer",
+        "@type": "@id"
+    },
+    "provider": {
+        "@id": "schema:producer",
+        "@type": "@id"
+    },
+    "image": "schema:image",
+    "Person": {
+        "@id": "schema:Person",
+        "@context": {
+            "description": "schema:description",
+            "identifier": "schema:identifier",
+            "sameAs": {
+                "@id": "schema:sameAs",
+                "@type": "@id"
+            }
+        }
+    },
+    "Organization": {
+        "@id": "schema:Organization",
+        "@context": {
+            "description": "schema:description",
+            "identifier": "schema:identifier",
+            "sameAs": {
+                "@id": "schema:sameAs",
+                "@type": "@id"
+            }
+        }
+    },
+    "birthDate": "schema:birthDate",
+    "birthPlace": "schema:birthPlace",
+    "deathDate": "schema:deathDate",
+    "deathPlace": "schema:deathPlace",
+    "honorificPrefix": "schema:honorificPrefix",
+    "honorificSuffix": "schema:honorificSuffix",
+    "knows": { 
+        "@id": "schema:knows",
+        "@type": "@id"
+    },
+    "gender": "schema:gender",
+    "occupation": "schema:hasOccupation",
+    "Occupation": {
+        "@id": "schema:Occupation",
+        "@context": {
+            "description": "schema:description",
+            "identifier": "schema:identifier",
+            "sameAs": {
+                "@id": "schema:sameAs",
+                "@type": "@id"
+            }
+        }
+    },
+    "location": {
+        "@id": "schema:location"
+    },
+    "fromLocation": {
+        "@id": "schema:fromLocation"
+    },
+    "toLocation": {
+        "@id": "schema:toLocation"
+    },
+    "Place": {
+        "@id": "schema:Place",
+        "@context": {
+            "name": "schema:name",
+            "description": "schema:description",
+            "identifier": "schema:identifier",
+            "sameAs": {
+                "@id": "schema:sameAs",
+                "@type": "@id"
+            }
+        }
+    },
+    "address": "schema:address"
+}
