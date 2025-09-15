@@ -10,7 +10,7 @@ The aims are:
 1. to ensure all vocabulary we use is properly documented and formalised
 2. to unify vocabularies as much as possible so we don't have different concepts for the same things in different places.
 3. to employ a consistent vocabulary in various projects and amongst various software components
-4. to make clear to which tools in our pipeline rely on what vocabulary to function.
+4. to make clear which tools in our pipeline rely on what vocabulary to function.
 5. to adhere to and reuse established standards (like the W3C Web Annotation Data Model) as much as possible and minimise the addition of new vocabulary 
 
 You can read more about our service-oriented architecture
