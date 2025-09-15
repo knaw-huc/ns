@@ -44,13 +44,15 @@ validate:
 deps:
 	@echo "Installing dependencies, you probably want to run this with sudo to install globally, but note that jsonld-cli will be installed globally from NPM rather than from a package!"
 ifeq ($(DISTRO),arch)
-	pacman -S yq npm pandoc
+	pacman -S go-yq npm pandoc
 else ifeq ($(DISTRO),$(filter $(DISTRO), debian ubuntu))
-	DEBIAN_FRONTEND=noninteractive apt-get install -y yq npm pandoc
+	@echo "Yq will be compiled from scratch"
+	DEBIAN_FRONTEND=noninteractive apt-get install -y npm pandoc golang
+	go install github.com/mikefarah/yq/v4@latest
 else ifeq ($(DISTRO),$(filter $(DISTRO), fedora redhat))
 	yum install yq npm pandoc
 else ifeq ($(DISTRO),$(filter $(DISTRO), alpine postmarketos))
-	apk add yq npm pandoc
+	apk add go-yq npm pandoc
 else ifeq ($(DISTRO),mac)
 	brew install yq npm pandoc
 endif
