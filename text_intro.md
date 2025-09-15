@@ -258,7 +258,7 @@ The following (non-exhaustive!) properties come from the [W3C Web Annotation (an
 | created | <http://purl.org/dc/terms/created> | Date of creation |
 | creator | <http://purl.org/dc/terms/creator> | An entity primarily responsible for making the resource. Typically, the name of a Creator should be used to indicate the entity. |
 | conformsTo | <http://purl.org/dc/terms/conformsTo>  | An established standard to which the described resource conforms. |
-| email  | <http://xmlns.com/foaf/0.1/email> | E-mail address |
+| email  | <http://xmlns.com/foaf/0.1/mbox> | E-mail address |
 | format | <http://purl.org/dc/elements/1.1/format> | The file format, physical medium, or dimensions of the resource. | 
 | generator | <http://www.w3.org/ns/activitystreams#generator> | Identifies the entity (e.g. an application) that generated the object.  |
 | generated | <http://purl.org/dc/terms/issued> | Date of generation/publication/generation |
@@ -269,14 +269,6 @@ The following (non-exhaustive!) properties come from the [W3C Web Annotation (an
 | partOf | <http://www.w3.org/ns/activitystreams#partOf> | marks something as a part of something bigger |
 | prev | <http://www.w3.org/ns/activitystreams#prev> | Used to link one item to the previous one (of the same type) in a sequence |
 | rights | <http://purl.org/dc/elements/1.1/rights> | Information about rights held in and over the resource. Recommended practice is to refer to a rights statement with a URI. If this is not possible or feasible, a literal value (name, label, or short text) may be provided. | 
-
-The following aliases from the [W3C Web Annotation (anno.jsonld)](anno.jsonld) JSON-LD context are [overridden](https://www.w3.org/TR/json-ld/#advanced-context-usage) by definitions in [textannodata.jsonld](textannodata.jsonld):
-
-| Alias | W3C Web Annotation | Overriden        |
-| ----- | -------- | ------------------ |
-| Person | <http://xmlns.com/foaf/0.1/Person> | <http://schema.org/Person> |
-| Organization | <http://xmlns.com/foaf/0.1/Organization> | <http://schema.org/Organization> |
-| name | <http://xmlns.com/foaf/0.1/name>  | <http://schema.org/name> | 
 
 The following table maps some (non-exhaustive) [old-style properties (not further formalised)](https://github.com/knaw-huc/team-text-backlog/issues/128) to the new ones:
 
