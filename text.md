@@ -53,6 +53,12 @@ _URI:_ <https://ns.huc.knaw.nl/text/Figure>
 _Same as:_ <http://www.tei-c.org/ns/1.0#figure>, <https://w3id.org/folia/v2/Figure>  
 
 
+## FigureMarker
+
+_Definition:_ Figure number or marker. Should be embedded within a Figure, but not within the caption.  
+_URI:_ <https://ns.huc.knaw.nl/text/FigureMarker>
+
+
 ## Head
 
 _Definition:_ Number/marker of a section or subsection. Embedded within a section but not within a head  
@@ -62,7 +68,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#head>, <https://w3id.org/folia/v2/head>
 
 ## Highlight
 
-_Definition:_ A highlighted/emphasised piece of text, in some presentational form.  
+_Definition:_ A highlighted/emphasised/stylized piece of text, in some presentational form. Use the style property to encode the form.  
 _URI:_ <https://ns.huc.knaw.nl/text/Highlight>
 _Same as:_ <http://www.tei-c.org/ns/1.0#hi>, <https://w3id.org/folia/v2/TextMarkupStyle>  
 
@@ -162,7 +168,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#q>, <https://w3id.org/folia/v2/Quote>
 
 ## Reference
 
-_Definition:_ A reference to another location in the text, such as to a footnote/endnote  
+_Definition:_ A reference to another location, either in the text, such as to a footnote/endnote, or an external URI. Use with schema:url.  
 _URI:_ <https://ns.huc.knaw.nl/text/Reference>
 _Same as:_ <http://www.tei-c.org/ns/1.0#ref>, <https://w3id.org/folia/v2/Reference>  
 

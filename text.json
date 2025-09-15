@@ -1,7 +1,13 @@
 {
   "@context": [
         "text.jsonld",       
-        "skos.jsonld"
+        "skos.jsonld",
+        {
+            "sameAs": {
+                "@id": "owl:sameAs",
+                "@type": "@id"
+            }
+        }
   ],
   "CommonTextVocabulary": {
         "@id": "txt:CommonTextVocabulary",
