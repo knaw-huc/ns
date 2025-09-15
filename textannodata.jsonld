@@ -18,14 +18,8 @@
     "style": {
         "@id": "tad:style"
     },
-    "name": {
-        "@id": "schema:name"
-    },
     "url": {
         "@id": "schema:url"
-    },
-    "email": {
-        "@id": "schema:email"
     },
     "identifier": {
         "@id": "dcterms:identifier"
@@ -126,22 +120,26 @@
         "@type": "@id"
     },
     "image": "schema:image",
-    "Person": {
+    "SchemaPerson": {
         "@id": "schema:Person",
         "@context": {
+            "name": "schema:name",
             "description": "schema:description",
             "identifier": "schema:identifier",
+            "email": "schema:email",
             "sameAs": {
                 "@id": "schema:sameAs",
                 "@type": "@id"
             }
         }
     },
-    "Organization": {
+    "SchemaOrganization": {
         "@id": "schema:Organization",
         "@context": {
+            "name": "schema:name",
             "description": "schema:description",
             "identifier": "schema:identifier",
+            "email": "schema:email",
             "sameAs": {
                 "@id": "schema:sameAs",
                 "@type": "@id"
