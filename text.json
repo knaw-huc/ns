@@ -209,11 +209,11 @@
       "broader": "txt:TextStructure",
       "sameAs": ["tei:figure", "folia:Figure" ]
   },
-  "Image" : {
-      "@id": "txt:Image",
+  "Picture" : {
+      "@id": "txt:Picture",
       "@type": "skos:Concept",
-      "prefLabel": "Image",
-      "definition": "Part of the document where an image is located. Non-textual.",
+      "prefLabel": "Picture",
+      "definition": "Part of the document where an image/picture/graphic is located. Non-textual.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": "tei:graphic"
