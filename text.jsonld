@@ -85,8 +85,8 @@
     "FigureMarker" : {
         "@id": "txt:FigureMarker"
     },
-    "Image" : {
-        "@id": "txt:Image"
+    "Picture" : {
+        "@id": "txt:Picture"
     },
     "Caption" : {
         "@id": "txt:Caption"
