@@ -216,7 +216,7 @@
       "definition": "Part of the document where an image/picture/graphic is located. Non-textual.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
-      "sameAs": "tei:graphic"
+      "sameAs": [ "tei:graphic", "schema:ImageObject" ]
   },
   "Caption" : {
       "@id": "txt:Caption",
