@@ -190,6 +190,20 @@
             }
         }
     },
-    "address": "schema:address"
+    "address": "schema:address",
+    "ImageObject": {
+        "@id": "schema:ImageObject",
+        "@context": {
+            "name": "schema:name",
+            "description": "schema:description",
+            "identifier": "schema:identifier",
+            "width": "schema:width",
+            "height": "schema:height",
+            "sameAs": {
+                "@id": "schema:sameAs",
+                "@type": "@id"
+            }
+        }
+    }
   }
 }
