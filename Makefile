@@ -52,7 +52,7 @@ else ifeq ($(DISTRO),$(filter $(DISTRO), debian ubuntu))
 else ifeq ($(DISTRO),$(filter $(DISTRO), fedora redhat))
 	yum install yq npm pandoc
 else ifeq ($(DISTRO),$(filter $(DISTRO), alpine postmarketos))
-	apk add go-yq npm pandoc
+	apk add yq-go npm pandoc
 else ifeq ($(DISTRO),mac)
 	brew install yq npm pandoc
 endif
