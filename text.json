@@ -122,6 +122,14 @@
       "broader": "txt:TextStructure",
       "sameAs": ["tei:head", "folia:head" ]
   },
+  "Document": {
+      "@id": "txt:Document",
+      "@type": "skos:Concept",
+      "prefLabel": "Document",
+      "definition": "A body of text that together forms a coherent entity; a document. The precise nature of the document (article,report,poem,etc) is not further specified",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure"
+  },
   "Page": {
       "@id": "txt:Page",
       "@type": "skos:Concept",
