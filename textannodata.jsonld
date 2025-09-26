@@ -21,6 +21,13 @@
     "style": {
         "@id": "tad:style"
     },
+    "subtitle": {
+        "@id": "tad:subtitle"
+    },
+    "subtitles": {
+        "@id": "tad:subtitle",
+        "@container": "@language"
+    },
     "url": {
         "@id": "schema:url"
     },

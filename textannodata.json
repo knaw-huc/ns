@@ -20,5 +20,11 @@
       "@type": "rdf:Property",
       "label": "elementName",
       "description": "The original element name from the source XML data. This property is mainly for provenance reasons and should be used as little as possible, rely on rdf:type instead."
+  },
+  "subtitle": {
+      "@id": "tad:subtitle",
+      "@type": "rdf:Property",
+      "label": "subtitle",
+      "description": "A secondary title"
   }
 }
