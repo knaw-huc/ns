@@ -14,7 +14,7 @@ All are served under <https://ns.huc.knaw.nl> and sources are in <https://github
 * **text**: Ontology of concepts to mark structure in text
     * [Documentation](text.md) - [Ontology](text.json) - [JSON-LD Context](text.jsonld) 
 * **textannodata**: Context of mappings of various properties used in text & annotation, accompanied with a small ontology for properties that were created by us and could not be mapped to existing ontologies.
-    * [JSON-LD Context](textannodata.jsonld) - [Ontology](textannodata.json) -  
+    * [JSON-LD Context](textannodata.jsonld) - [Ontology](textannodata.json) - For documentation see [Text & Annotation vocabulary](text_intro.md)
 * **huc-di-tt**: Old aliases for Team Text (deprecated)
     * [JSON-LD Context](huc-di-tt.jsonld)
 * **republic**: Context for the Republic project

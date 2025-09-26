@@ -216,6 +216,7 @@ The following custom target properties are defined in the [textannodata.json](te
 | ----- | -------- | ------------------ |
 | n | <https://ns.huc.knaw.nl/textannodata/n> |  Sequence number |
 | style | <https://ns.huc.knaw.nl/textannodata/style> |  Encodes the rendition style of a piece of text. The vocabulary is open-ended and may contain terms as 'italic', 'bold','underlined', common color names (red,blue,green) or `#rrggbb` color codes. This property is expected on Highlight annotations. |
+| elementName | <https://ns.huc.knaw.nl/textannodata/elementName> | The original element name from the source XML data. This property is mainly for provenance reasons and should be used as little as possible, rely on rdf:type instead. |
 
 The following properties from existing ontologies are defined in the [textannodata.jsonld](textannodata.jsonld) JSON-LD context:
 
