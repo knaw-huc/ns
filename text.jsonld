@@ -54,7 +54,7 @@
     },
     "Document": {
         "@id": "txt:Document"
-    }
+    },
     "Page": {
         "@id": "txt:Page"
     },

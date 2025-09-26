@@ -3,16 +3,22 @@
         "textannodata.jsonld"
   ],
   "n": {
-      "@id": "txt:n",
+      "@id": "tad:n",
       "@type": "rdf:Property",
       "label": "number",
       "description": "Sequence number",
       "sameAs": ["tei:n", "folia:NAttribute"]
   },
   "style": {
-      "@id": "txt:style",
+      "@id": "tad:style",
       "@type": "rdf:Property",
       "label": "style",
       "description": "Encodes the rendition style of a piece of text. The vocabulary is open-ended and may contain terms as 'italic', 'bold','underlined', common color names (red,blue,green) or #rrggbb color codes. This property is expected on Highlight annotations."
+  },
+  "elementName": {
+      "@id": "tad:style",
+      "@type": "rdf:Property",
+      "label": "elementName",
+      "description": "The original element name from the source XML data. This property is mainly for provenance reasons and should be used as little as possible, rely on rdf:type instead."
   }
 }

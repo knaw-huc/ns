@@ -15,6 +15,9 @@
     "n": {
         "@id": "tad:n"
     },
+    "elementName": {
+        "@id": "tad:elementName"
+    },
     "style": {
         "@id": "tad:style"
     },
