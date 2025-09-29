@@ -119,20 +119,20 @@ The following example shows an example web annotation:
   "target": {
     {
       "source": "https://preview.dev.diginfra.org/textsurf/israels/001.txt?char=0,1234",
-      "type": "Text",
+      "type": "NormalText",
+    },
+    {
+      "source": "https://preview.dev.diginfra.org/textsurf/api2/israels|001.txt/0,1234",
+      "type": "NormalText",
     },
     {
       "source": "https://preview.dev.diginfra.org/textsurf/israels/001.txt",
-      "type": "Text",
+      "type": "NormalText",
       "selector": {
         "type": "TextPositionSelector",
         "start": 0,
         "end": 1234
       }
-    },
-    {
-      "source": "https://preview.dev.diginfra.org/textsurf/api2/israels|001.txt/0,1234",
-      "type": "Text",
     },
     {
       "source": "https://preview.dev.diginfra.org/sources/israels/ii001.xml",
@@ -204,6 +204,67 @@ The following example shows an example web annotation:
 
 **Note**: Parts with prefix *TODO:* are still be reconciled with into the new vocabulary.
 
+And here is another example (from a local development context):
+
+
+```json
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "https://ns.huc.knaw.nl/text.jsonld",
+    "https://ns.huc.knaw.nl/textannodata.jsonld",
+    {
+      "tei": "http://www.tei-c.org/ns/1.0#",
+      "xml": "http://www.w3.org/XML/1998/namespace/"
+    }
+  ],
+  "id": "http://localhost:8080/translatin/Macropedius-Adamus.txt/personae-dramatis-seu-diverbii-actus-primi",
+  "type": "Annotation",
+  "generated": "2025-09-27T12:49:40.538076074+02:00",
+  "generator": {
+    "id": "https://github.com/annotation/stam-rust",
+    "type": "Software",
+    "name": "STAM Library"
+  },
+  "body": {
+    "id": "http://localhost:8080/translatin/Macropedius-Adamus.txt/personae-dramatis-seu-diverbii-actus-primi/body",
+    "type": "Division",
+    "elementName": "div",
+    "xml:id": "personae-dramatis-seu-diverbii-actus-primi",
+    "tei:type": "level2"
+  },
+  "target": [
+    {
+      "type": "OriginalText",
+      "source": "http://localhost:8083/translatin/Macropedius-Adamus.txt",
+      "selector": {
+        "type": "TextPositionSelector",
+        "start": 7092,
+        "end": 7208
+      }
+    },
+    {
+        "source": "http://localhost:8083/api2/translatin|Macropedius-Adamus.txt/7092,7208",
+        "type": "OriginalText"
+    },
+    {
+      "type": "NormalText",
+      "source": "http://localhost:8083/translatin/Macropedius-Adamus.norm.txt",
+      "selector": {
+        "type": "TextPositionSelector",
+        "start": 7090,
+        "end": 7206
+      }
+    },
+    {
+      "type": "NormalText",
+      "source": "http://localhost:8083/api2/translatin|Macropedius-Adamus.norm.txt/7090,7206"
+    }
+  ]
+}
+```
+
+
 ### Mapping properties
 
 We try to map properties for text and annotation, as extracted from the various sources (e.g. TEI, PageXML), to existing linked open data ontologies. Only if no suitable property can be found, do we create one of our own in [textannodata.json](textannodata.json).
@@ -218,6 +279,13 @@ The following custom target properties are defined in the [textannodata.json](te
 | style | <https://ns.huc.knaw.nl/textannodata/style> |  Encodes the rendition style of a piece of text. The vocabulary is open-ended and may contain terms as 'italic', 'bold','underlined', common color names (red,blue,green) or `#rrggbb` color codes. This property is expected on Highlight annotations. |
 | elementName | <https://ns.huc.knaw.nl/textannodata/elementName> | The original element name from the source XML data. This property is mainly for provenance reasons and should be used as little as possible, rely on rdf:type instead. |
 | subtitle | <https://ns.huc.knaw.nl/textannodata/subtitle> | A secondary title.  |
+
+And the custom following classes are defined:
+
+| Alias | Class | Description        |
+| ----- | -------- | ------------------ |
+| NormalText | <https://ns.huc.knaw.nl/textannodata/NormalText> |  This class is used on web annotation targets and indicates that the referenced text is in a form considered the normal form for a particular dataset. This means that text may have been dehyphenated and linebreaks removed (if this was needed). The precise nature of the normalization is not strictly defined but must be consistent within a dataset. It is contrasted to OriginalText. |
+| OriginalText | <https://ns.huc.knaw.nl/textannodata/OriginalText> |  This class is used on web annotation targets and indicates that the referenced text is in an original form prior to any (further unspecified) normalization deemed necessary for the dataset. It is contrasted to NormalText. |
 
 The following properties from existing ontologies are defined in the [textannodata.jsonld](textannodata.jsonld) JSON-LD context:
 

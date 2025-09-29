@@ -1,6 +1,7 @@
 {
   "@context": [
-        "textannodata.jsonld"
+        "textannodata.jsonld",
+        "skos.jsonld"
   ],
   "n": {
       "@id": "tad:n",
@@ -26,5 +27,19 @@
       "@type": "rdf:Property",
       "label": "subtitle",
       "description": "A secondary title"
+  },
+  "NormalText": {
+      "@id": "tad:NormalText",
+      "@type": "Concept",
+      "prefLabel": "NormalText",
+      "definition": "This class is used on web annotation targets and indicates that the referenced text is in a form considered the normal form for a particular dataset. This means that text may have been dehyphenated and linebreaks removed (if this was needed). The precise nature of the normalization is not strictly defined but must be consistent within a dataset. It is contrasted to OriginalText.",
+      "broader": "dcterms:Text"
+  },
+  "OriginalText": {
+      "@id": "tad:OriginalText",
+      "@type": "Concept",
+      "prefLabel": "OriginalText",
+      "definition": "This class is used on web annotation targets and indicates that the referenced text is in an original form prior to any (further unspecified) normalization deemed necessary for the dataset. It is contrasted to NormalText.",
+      "broader": "dcterms:Text"
   }
 }

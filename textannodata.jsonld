@@ -28,6 +28,12 @@
         "@id": "tad:subtitle",
         "@container": "@language"
     },
+    "NormalText": {
+        "@id": "tad:NormalText"
+    },
+    "OriginalText": {
+        "@id": "tad:OriginalText"
+    },
     "url": {
         "@id": "schema:url"
     },
