@@ -21,7 +21,7 @@ All are served under <https://ns.huc.knaw.nl> and sources are in <https://github
     * [JSON-LD Context](republic.jsonld)
 * **variant Matching**: Context for variant matching, as used in the Golden Agents project
     * [JSON-LD Context](variant-matching.jsonld)
-* **globalise**: Context for variant matching, as used in the Golden Agents project
+* **globalise**: Context for the Globalise project
     * [JSON-LD Context](globalise.jsonld)
 * **skos**: Context for [SKOS](https://www.w3.org/TR/skos-reference/)
     * [JSON-LD Context](skos.jsonld)
