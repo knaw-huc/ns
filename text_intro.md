@@ -279,6 +279,7 @@ The following custom target properties are defined in the [textannodata.json](te
 | style | <https://ns.huc.knaw.nl/textannodata/style> |  Encodes the rendition style of a piece of text. The vocabulary is open-ended and may contain terms as 'italic', 'bold','underlined', common color names (red,blue,green) or `#rrggbb` color codes. This property is expected on Highlight annotations. |
 | elementName | <https://ns.huc.knaw.nl/textannodata/elementName> | The original element name from the source XML data. This property is mainly for provenance reasons and should be used as little as possible, rely on rdf:type instead. |
 | subtitle | <https://ns.huc.knaw.nl/textannodata/subtitle> | A secondary title.  |
+| subtype | <https://ns.huc.knaw.nl/textannodata/subtype> | A secondary type. Whereas the rdf:type expresses a primary type, this expresses a subordinate type for the given rdf:type. It is useful in cases where you want to explicitly make the subordinate relation clear or want to avoid having multiple rdf types. |
 
 And the custom following classes are defined:
 

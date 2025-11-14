@@ -28,6 +28,9 @@
         "@id": "tad:subtitle",
         "@container": "@language"
     },
+    "subtype": {
+        "@id": "tad:subtype"
+    },
     "NormalText": {
         "@id": "tad:NormalText"
     },

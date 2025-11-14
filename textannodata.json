@@ -28,6 +28,12 @@
       "label": "subtitle",
       "description": "A secondary title"
   },
+  "subtype": {
+      "@id": "tad:subtype",
+      "@type": "rdf:Property",
+      "label": "subtype",
+      "description": "A secondary type. Whereas the rdf:type expresses a primary type, this expresses a subordinate type for the given rdf:type. It is useful in cases where you want to explicitly make the subordinate relation clear or want to avoid having multiple rdf types."
+  },
   "NormalText": {
       "@id": "tad:NormalText",
       "@type": "Concept",
