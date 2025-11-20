@@ -94,6 +94,9 @@
     "Caption" : {
         "@id": "txt:Caption"
     },
+    "Label" : {
+        "@id": "txt:Label"
+    },
     "Table" : {
         "@id": "txt:Table"
     },

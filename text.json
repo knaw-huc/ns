@@ -338,5 +338,14 @@
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:corr", "folia:Correction"]
+  },
+ "Label" {
+      "@id": "txt:Label",
+      "@type": "skos:Concept",
+      "prefLabel": "Label",
+      "definition": "An in-line label/heading to identify part of a text, often used in lists or glossaries. Not used for figure/table captions!",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "sameAs": ["tei:label", "folia:Label"]
   }
 }
