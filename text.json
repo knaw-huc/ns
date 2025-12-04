@@ -339,7 +339,7 @@
       "broader": "txt:TextStructure",
       "sameAs": ["tei:corr", "folia:Correction"]
   },
- "Label" {
+ "Label": {
       "@id": "txt:Label",
       "@type": "skos:Concept",
       "prefLabel": "Label",
