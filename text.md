@@ -7,7 +7,7 @@ _URI:_ <https://ns.huc.knaw.nl/text/TextStructure>
 
 ## Caption
 
-_Definition:_ Text that constitutes the caption for a figure or table. Does not include the number or marker (see FigureMarker).  
+_Definition:_ Text that constitutes the caption for a figure or table. Does not include the number or marker (see FigureMarker or TableMarker).  
 _URI:_ <https://ns.huc.knaw.nl/text/Caption>
 _Same as:_ <http://www.tei-c.org/ns/1.0#caption>, <https://w3id.org/folia/v2/Caption>  
 
@@ -55,15 +55,20 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#figure>, <https://w3id.org/folia/v2/Figu
 
 ## FigureMarker
 
-_Definition:_ Figure number or marker. Should be embedded within a Figure, but not within the caption.  
+_Definition:_ Figure number or marker. Should be adjacent to the Figure (i.e. not embedded).
 _URI:_ <https://ns.huc.knaw.nl/text/FigureMarker>
 
 
 ## Head
 
-_Definition:_ Number/marker of a section or subsection. Embedded within a section but not within a head  
+_Definition:_ Head of a section or subsection.
 _URI:_ <https://ns.huc.knaw.nl/text/Head>
 _Same as:_ <http://www.tei-c.org/ns/1.0#head>, <https://w3id.org/folia/v2/head>  
+
+## HeadMarker
+
+_Definition:_ Number/marker of a section or subsection. Should be adjacent to the Head (i.e. not embedded).
+_URI:_ <https://ns.huc.knaw.nl/text/HeadMarker>
 
 
 ## Highlight
@@ -95,7 +100,7 @@ _Same as:_ <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/Text
 
 ## LineMarker
 
-_Definition:_ A marker that precedes a line, for example an explicit line number in the text  
+_Definition:_ A marker that precedes a line, for example an explicit line number in the text. Should be adjacent to the Line annotation itself.
 _URI:_ <https://ns.huc.knaw.nl/text/LineMarker>
 
 
@@ -122,7 +127,8 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#item>, <https://w3id.org/folia/v2/ListIt
 
 ## ListItemMarker
 
-_Definition:_ The numeral/bullet/hyphen that marks items in a list. Embedded within a List but not within the ListItem.  
+_Definition:_ The numeral/bullet/hyphen that marks items in a list. Should be left-adjacent to the ListItem (i.e. not embedded) and embedded within a List.
+
 _URI:_ <https://ns.huc.knaw.nl/text/ListItemMarker>
 
 
@@ -135,7 +141,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#note>, <https://w3id.org/folia/v2/Note>
 
 ## NoteMarker
 
-_Definition:_ A marker/number for a note, footnote, endnote. Should be embedded within the note, usually as first text.  
+_Definition:_ A marker/number for a note, footnote, endnote. Should be adjacent to the actual note (i.e. not embedded).
 _URI:_ <https://ns.huc.knaw.nl/text/NoteMarker>
 
 
@@ -148,7 +154,7 @@ _Same as:_ <http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/Page
 
 ## PageMarker
 
-_Definition:_ A page number or other form of page marker. Should be embedded within a Page.  
+_Definition:_ A page number or other form of page marker. May be embedded or adjacent to a Page.  
 _URI:_ <https://ns.huc.knaw.nl/text/PageMarker>
 
 
@@ -210,7 +216,7 @@ _Same as:_ <http://www.tei-c.org/ns/1.0#table>, <https://w3id.org/folia/v2/Table
 
 ## TableMarker
 
-_Definition:_ Table number or marker. Should be embedded within a Table, but not within its caption  
+_Definition:_ Table number or marker. Should be adjacent to a Table.
 _URI:_ <https://ns.huc.knaw.nl/text/TableMarker>
 
 
