@@ -31,6 +31,12 @@
     "subtype": {
         "@id": "tad:subtype"
     },
+    "isTextPrefix": {
+        "@id": "tad:isTextPrefix"
+    },
+    "isTextSuffix": {
+        "@id": "tad:isTextSuffix"
+    },
     "NormalText": {
         "@id": "tad:NormalText"
     },
