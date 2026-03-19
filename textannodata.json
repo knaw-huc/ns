@@ -59,5 +59,11 @@
       "prefLabel": "OriginalText",
       "definition": "This class is used on web annotation targets and indicates that the referenced text is in an original form prior to any (further unspecified) normalization deemed necessary for the dataset. It is contrasted to NormalText.",
       "broader": "dcterms:Text"
+  },
+  "namedPeriod": {
+      "@id": "tad:namedPeriod",
+      "@type": "rdf:Property",
+      "label": "namedPeriod",
+      "description": "The name of a specific temporary period to which a text or annotation pertains, interpreted within a specific context"
   }
 }

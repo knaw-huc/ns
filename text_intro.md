@@ -280,6 +280,7 @@ The following custom target properties are defined in the [textannodata.json](te
 | elementName | <https://ns.huc.knaw.nl/textannodata/elementName> | The original element name from the source XML data. This property is mainly for provenance reasons and should be used as little as possible, rely on rdf:type instead. |
 | subtitle | <https://ns.huc.knaw.nl/textannodata/subtitle> | A secondary title.  |
 | subtype | <https://ns.huc.knaw.nl/textannodata/subtype> | A secondary type. Whereas the rdf:type expresses a primary type, this expresses a subordinate type for the given rdf:type. It is useful in cases where you want to explicitly make the subordinate relation clear or want to avoid having multiple rdf types. |
+| namedPeriod | <https://ns.huc.knaw.nl/textannodata/namedPeriod> | The name of a specific temporary period to which a text or annotation pertains, interpreted within a specific context |
 
 And the custom following classes are defined:
 

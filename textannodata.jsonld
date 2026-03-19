@@ -43,6 +43,9 @@
     "OriginalText": {
         "@id": "tad:OriginalText"
     },
+    "namedPeriod": {
+        "@id": "tad:namedPeriod"
+    },
     "url": {
         "@id": "schema:url"
     },
