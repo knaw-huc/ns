@@ -130,6 +130,9 @@
     "Correction" : {
         "@id": "txt:Correction"
     },
+    "Term" : {
+        "@id": "txt:Term"
+    },
     "Canvas": {
       "@id": "iiif:Canvas",
       "@context": {

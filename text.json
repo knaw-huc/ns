@@ -347,5 +347,14 @@
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:label", "folia:Label"]
+  },
+  "Term" : {
+      "@id": "txt:Term",
+      "@type": "skos:Concept",
+      "prefLabel": "Term",
+      "definition": "A word or phrase which is regarded as a technical term",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "sameAs": ["tei:term", "folia:term"]
   }
 }
