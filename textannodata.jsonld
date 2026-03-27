@@ -13,166 +13,169 @@
     "iiif": "http://iiif.io/api/presentation/3#",
     "schema": "http://schema.org",
     "n": {
-        "@id": "tad:n"
+      "@id": "tad:n"
     },
     "elementName": {
-        "@id": "tad:elementName"
+      "@id": "tad:elementName"
     },
     "style": {
-        "@id": "tad:style"
+      "@id": "tad:style"
     },
     "subtitle": {
-        "@id": "tad:subtitle"
+      "@id": "tad:subtitle"
+    },
+    "summary": {
+      "@id": "dcmi:abstract"
     },
     "subtitles": {
-        "@id": "tad:subtitle",
-        "@container": "@language"
+      "@id": "tad:subtitle",
+      "@container": "@language"
     },
     "subtype": {
-        "@id": "tad:subtype"
+      "@id": "tad:subtype"
     },
     "isTextPrefix": {
-        "@id": "tad:isTextPrefix"
+      "@id": "tad:isTextPrefix"
     },
     "isTextSuffix": {
-        "@id": "tad:isTextSuffix"
+      "@id": "tad:isTextSuffix"
     },
     "NormalText": {
-        "@id": "tad:NormalText"
+      "@id": "tad:NormalText"
     },
     "OriginalText": {
-        "@id": "tad:OriginalText"
+      "@id": "tad:OriginalText"
     },
     "namedPeriod": {
-        "@id": "tad:namedPeriod"
+      "@id": "tad:namedPeriod"
     },
     "url": {
-        "@id": "schema:url"
+      "@id": "schema:url"
     },
     "identifier": {
-        "@id": "dcterms:identifier"
+      "@id": "dcterms:identifier"
     },
     "title": {
-        "@id": "dcterms:title"
+      "@id": "dcterms:title"
     },
     "titles": {
-        "@id": "dcterms:title",
-        "@container": "@language"
+      "@id": "dcterms:title",
+      "@container": "@language"
     },
     "label": {
-        "@id": "rdfs:label"
+      "@id": "rdfs:label"
     },
     "labels": {
-        "@id": "rdfs:label",
-        "@container": "@language"
+      "@id": "rdfs:label",
+      "@container": "@language"
     },
     "description": {
-        "@id": "dcterms:description"
+      "@id": "dcterms:description"
     },
     "descriptions": {
-        "@id": "dcterms:description",
-        "@container": "@language"
+      "@id": "dcterms:description",
+      "@container": "@language"
     },
     "sourceUrl": {
-        "@id": "dcterms:source"
+      "@id": "dcterms:source"
     },
     "editor": {
-        "@id": "schema:editor"
+      "@id": "schema:editor"
     },
     "genre": {
-        "@id": "schema:genre"
+      "@id": "schema:genre"
     },
     "license": {
-        "@id": "schema:license"
+      "@id": "schema:license"
     },
     "datePublished": {
-        "@id": "schema:datePublished"
+      "@id": "schema:datePublished"
     },
     "dateCreated": {
-        "@id": "schema:dateCreated"
+      "@id": "schema:dateCreated"
     },
     "dateModified": {
-        "@id": "schema:dateModified"
+      "@id": "schema:dateModified"
     },
     "keywords": {
-        "@id": "schema:keywords"
+      "@id": "schema:keywords"
     },
     "relation": {
-        "@id": "dcterms:relation"
+      "@id": "dcterms:relation"
     },
     "references": {
-        "@id": "dcterms:references",
-        "@type": "@id"
+      "@id": "dcterms:references",
+      "@type": "@id"
     },
     "publisher": {
-        "@id": "dcterms:publisher"
+      "@id": "dcterms:publisher"
     },
     "replaces": {
-        "@id": "dcterms:replaces",
-        "@type": "@id"
+      "@id": "dcterms:replaces",
+      "@type": "@id"
     },
     "manifest": {
-        "@id": "iiif:hasManifests",
-        "@container": "@list"
+      "@id": "iiif:hasManifests",
+      "@container": "@list"
     },
     "recipient": {
-        "@id": "schema:recipient",
-        "@type": "@id"
+      "@id": "schema:recipient",
+      "@type": "@id"
     },
     "participant": {
-        "@id": "schema:participant",
-        "@type": "@id"
+      "@id": "schema:participant",
+      "@type": "@id"
     },
     "sender": {
-        "@id": "schema:sender",
-        "@type": "@id"
+      "@id": "schema:sender",
+      "@type": "@id"
     },
     "sameAs": {
-        "@id": "owl:sameAs",
-        "@type": "@id"
+      "@id": "owl:sameAs",
+      "@type": "@id"
     },
     "affiliation": {
-        "@id": "schema:affiliation", 
-        "@type": "@id"
+      "@id": "schema:affiliation",
+      "@type": "@id"
     },
     "author": {
-        "@id": "schema:author",
-        "@type": "@id"
+      "@id": "schema:author",
+      "@type": "@id"
     },
     "producer": {
-        "@id": "schema:producer",
-        "@type": "@id"
+      "@id": "schema:producer",
+      "@type": "@id"
     },
     "provider": {
-        "@id": "schema:producer",
-        "@type": "@id"
+      "@id": "schema:producer",
+      "@type": "@id"
     },
     "image": "schema:image",
     "SchemaPerson": {
-        "@id": "schema:Person",
-        "@context": {
-            "name": "schema:name",
-            "description": "schema:description",
-            "identifier": "schema:identifier",
-            "email": "schema:email",
-            "sameAs": {
-                "@id": "schema:sameAs",
-                "@type": "@id"
-            }
+      "@id": "schema:Person",
+      "@context": {
+        "name": "schema:name",
+        "description": "schema:description",
+        "identifier": "schema:identifier",
+        "email": "schema:email",
+        "sameAs": {
+          "@id": "schema:sameAs",
+          "@type": "@id"
         }
+      }
     },
     "SchemaOrganization": {
-        "@id": "schema:Organization",
-        "@context": {
-            "name": "schema:name",
-            "description": "schema:description",
-            "identifier": "schema:identifier",
-            "email": "schema:email",
-            "sameAs": {
-                "@id": "schema:sameAs",
-                "@type": "@id"
-            }
+      "@id": "schema:Organization",
+      "@context": {
+        "name": "schema:name",
+        "description": "schema:description",
+        "identifier": "schema:identifier",
+        "email": "schema:email",
+        "sameAs": {
+          "@id": "schema:sameAs",
+          "@type": "@id"
         }
+      }
     },
     "birthDate": "schema:birthDate",
     "birthPlace": "schema:birthPlace",
@@ -180,58 +183,58 @@
     "deathPlace": "schema:deathPlace",
     "honorificPrefix": "schema:honorificPrefix",
     "honorificSuffix": "schema:honorificSuffix",
-    "knows": { 
-        "@id": "schema:knows",
-        "@type": "@id"
+    "knows": {
+      "@id": "schema:knows",
+      "@type": "@id"
     },
     "gender": "schema:gender",
     "occupation": "schema:hasOccupation",
     "Occupation": {
-        "@id": "schema:Occupation",
-        "@context": {
-            "description": "schema:description",
-            "identifier": "schema:identifier",
-            "sameAs": {
-                "@id": "schema:sameAs",
-                "@type": "@id"
-            }
+      "@id": "schema:Occupation",
+      "@context": {
+        "description": "schema:description",
+        "identifier": "schema:identifier",
+        "sameAs": {
+          "@id": "schema:sameAs",
+          "@type": "@id"
         }
+      }
     },
     "location": {
-        "@id": "schema:location"
+      "@id": "schema:location"
     },
     "fromLocation": {
-        "@id": "schema:fromLocation"
+      "@id": "schema:fromLocation"
     },
     "toLocation": {
-        "@id": "schema:toLocation"
+      "@id": "schema:toLocation"
     },
     "Place": {
-        "@id": "schema:Place",
-        "@context": {
-            "name": "schema:name",
-            "description": "schema:description",
-            "identifier": "schema:identifier",
-            "sameAs": {
-                "@id": "schema:sameAs",
-                "@type": "@id"
-            }
+      "@id": "schema:Place",
+      "@context": {
+        "name": "schema:name",
+        "description": "schema:description",
+        "identifier": "schema:identifier",
+        "sameAs": {
+          "@id": "schema:sameAs",
+          "@type": "@id"
         }
+      }
     },
     "address": "schema:address",
     "ImageObject": {
-        "@id": "schema:ImageObject",
-        "@context": {
-            "name": "schema:name",
-            "description": "schema:description",
-            "identifier": "schema:identifier",
-            "width": "schema:width",
-            "height": "schema:height",
-            "sameAs": {
-                "@id": "schema:sameAs",
-                "@type": "@id"
-            }
+      "@id": "schema:ImageObject",
+      "@context": {
+        "name": "schema:name",
+        "description": "schema:description",
+        "identifier": "schema:identifier",
+        "width": "schema:width",
+        "height": "schema:height",
+        "sameAs": {
+          "@id": "schema:sameAs",
+          "@type": "@id"
         }
+      }
     }
   }
 }
