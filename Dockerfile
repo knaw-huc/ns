@@ -10,7 +10,7 @@ RUN apk update &&\
     sed -i 's/txt;/txt log md;/' /etc/nginx/mime.types &&\
     sed -i "s/}/\tapplication\/ld+json\tjsonld;\n\tapplication\/n-quads\tnq;\ttext\/turtle\tttl;\n}/" /etc/nginx/mime.types &&\
     mkdir -p /etc/service/nginx &&\
-    cd /usr/local/src &&\ 
+    cd /usr/local/src &&\
     cp etc/nginx/nginx.conf /etc/nginx/nginx.conf &&\
     cp etc/nginx/http.d/ns.conf /etc/nginx/http.d/ns.conf &&\
     make deps &&\
