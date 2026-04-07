@@ -356,5 +356,14 @@
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:term", "folia:term"]
+  },
+  "Supplied" : {
+      "@id": "txt:Supplied",
+      "@type": "skos:Concept",
+      "prefLabel": "Supplied",
+      "definition": "Text supplied by the transcriber or editor for any reason; for example because the original cannot be read due to physical damage, or because of an obvious omission by the author or scribe",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "sameAs": ["tei:supplied"]
   }
 }

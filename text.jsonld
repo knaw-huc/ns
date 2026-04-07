@@ -133,6 +133,9 @@
     "Term" : {
         "@id": "txt:Term"
     },
+    "Supplied" : {
+        "@id": "txt:Supplied"
+    },
     "Canvas": {
       "@id": "iiif:Canvas",
       "@context": {
