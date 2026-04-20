@@ -84,7 +84,7 @@
       "definition": "An arbitrary generic grouping of a relatively small amount of text.",
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
-      "sameAs": [ "tei:span", "folia:String" ]
+      "sameAs": [ "tei:span", "tei:seg", "folia:String" ]
   },
   "Quote" : {
       "@id": "txt:Quote",
