@@ -65,5 +65,11 @@
       "@type": "rdf:Property",
       "label": "namedPeriod",
       "description": "The name of a specific temporary period to which a text or annotation pertains, interpreted within a specific context"
+  },
+  "optional": {
+      "@id": "tad:optional",
+      "@type": "rdf:Property",
+      "label": "optional",
+      "description": "Indicates that the annotation is optional and that there may be valid reasons to hide it in rendering. This takes a boolean value."
   }
 }

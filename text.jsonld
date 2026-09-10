@@ -136,6 +136,9 @@
     "Supplied" : {
         "@id": "txt:Supplied"
     },
+    "Character" : {
+        "@id": "txt:Character"
+    },
     "Canvas": {
       "@id": "iiif:Canvas",
       "@context": {

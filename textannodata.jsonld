@@ -49,6 +49,9 @@
     "namedPeriod": {
       "@id": "tad:namedPeriod"
     },
+    "optional": {
+      "@id": "tad:optional"
+    },
     "url": {
       "@id": "schema:url"
     },

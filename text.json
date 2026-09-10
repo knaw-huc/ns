@@ -365,5 +365,14 @@
       "inScheme": "txt:CommonTextVocabulary",
       "broader": "txt:TextStructure",
       "sameAs": ["tei:supplied"]
+  },
+  "Character" : {
+      "@id": "txt:Character",
+      "@type": "skos:Concept",
+      "prefLabel": "Character",
+      "definition": "A single character or glyph in writing. This may still be represented by multiple codepoints in the encoding (e.g. if diacritics are represented in decomposed form).",
+      "inScheme": "txt:CommonTextVocabulary",
+      "broader": "txt:TextStructure",
+      "sameAs": [ "tei:c" ]
   }
 }
