@@ -22,12 +22,5 @@ spec:
       - name: ns
         image: registry.huc.knaw.nl/ns/ns
         imagePullPolicy: Always
-        resources:
-          requests:
-            cpu: "1000m"
-            memory: "1000Mi"
-          limits:
-            cpu: "1000m"
-            memory: "1000Mi"
         ports:
         - containerPort: 80
