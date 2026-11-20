@@ -1,4 +1,4 @@
-.DELETE_ON_ERROR:
+.ELETE_ON_ERROR:
 .PHONY: deps docker all clean deploy validate help
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
@@ -62,8 +62,8 @@ docker:
 	docker build -t knaw-huc/ns .
 
 deploy: docker
-	docker tag $(shell docker images knaw-huc/ns --format "table {{.ID}}" | tail -n 1) registry.huc.knaw.nl/ns/ns:latest
-	docker push registry.huc.knaw.nl/ns/ns:latest
+	docker tag $(shell docker images knaw-huc/ns --format "table {{.ID}}" | tail -n 1) registry.diginfra.net/ns/ns:latest
+	docker push registry.diginfra.net/ns/ns:latest
 	cd etc/k8s && make deploy && cd -
 
 help:
